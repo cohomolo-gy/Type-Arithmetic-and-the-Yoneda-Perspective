@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	
+	\PYG{n+nf}{\PYGZbs{}}\PYG{n}{text}\PYG{p}{\PYGZob{}}\PYG{o}{\PYGZdl{}\PYGZbs{}}\PYG{k+kt}{Phi}\PYG{o}{\PYGZdl{}}\PYG{p}{\PYGZcb{}} \PYG{o+ow}{=} \PYG{l+m+mi}{1} \PYG{o}{+} \PYG{l+m+mi}{1}
+		\PYG{o+ow}{=} \PYG{n+nb}{()} \PYG{o}{+} \PYG{n+nb}{()}
+		\PYG{o+ow}{=} \PYG{k+kt}{Either} \PYG{n+nb}{()} \PYG{n+nb}{()}
+\end{Verbatim}

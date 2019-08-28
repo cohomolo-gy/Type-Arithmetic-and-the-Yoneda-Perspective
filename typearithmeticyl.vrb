@@ -1,0 +1,9 @@
+
+Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has precisely two inhabitants
+	\begin{minted}{haskell}
+	
+	Maybe Bool
+	= Nothing + Just (True + False)
+	= 1 + 1 + 1
+	= 3
+	\end{minted}

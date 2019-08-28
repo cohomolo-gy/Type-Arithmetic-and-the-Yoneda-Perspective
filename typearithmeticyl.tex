@@ -1,0 +1,271 @@
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
+\documentclass[tikz]{beamer}
+
+
+\usepackage{minted}
+\usepackage[parfill]{parskip}    		
+\usepackage{graphicx}				
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{tikz-cd}
+\usepackage{enumerate}
+\usepackage{xfrac}
+\usepackage{hyperref}
+\usepackage{graphicx} \graphicspath{ {./} }
+\usepackage{xcolor}
+
+
+\newcommand{\cat}[1]{\bm{ \mathsf{#1} }}
+\newcommand{\functor}[3]{#1 : \cat{#2} \to \cat{#3}}
+\newcommand{\functordef}{\functor{F}{C}{D}}
+\newcommand{\cc}{\cat{C}}
+\newcommand{\dd}{\cat{D}}
+\newcommand{\ee}{\cat{E}}
+\newcommand{\subcat}[2]{\bm{ \mathsf{#1}}_{\bm{ \mathsf{#2}}}}
+\newcommand{\op}[1]{#1^{\text{op}}}
+\newcommand{\opc}{\op{\cc}}
+\newcommand{\opd}{\op{\dd}}
+\newcommand{\ope}{\op{\ee}}
+\newcommand{\mono}{\rightarrowtail}
+\newcommand{\epi}{\twoheadrightarrow}
+\newcommand{\one}{\mathbb{1}}
+\newcommand{\bg}{\cat{BG}}
+\newcommand{\bgg}{\cat{BG'}}
+\newcommand{\nt}{\Rightarrow}
+\newcommand{\ant}[2]{\alpha : F \nt G} 
+\newcommand{\bnt}[2]{\beta : F \nt G} 
+\newcommand{\anti}[2]{\alpha : F \cong G} 
+\newcommand{\bnti}[2]{\beta : F \cong G} 
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\mred}[1]{\textcolor{red}{$#1$}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\mblue}[1]{\textcolor{blue}{$#1$}}
+
+\setbeamertemplate{navigation symbols}{\insertframenumber{}}
+\colorlet{shadecolor}{gray!15}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\newcommand{\propnumber}{} % initialize
+\newtheorem*{prop}{Proposition \propnumber}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+
+\AtBeginSection[]{
+  \begin{frame}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+    \usebeamerfont{title}\insertsectionhead\par%
+  \end{beamercolorbox}
+  \vfill
+  \end{frame}
+}
+
+
+\title{Type Arithmetic and the Yoneda Lemma}
+\author{Emily Pillmore}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+\section{Introduction}
+\subsection{Who am I?}
+
+\frame
+{
+	My name is Emily Pillmore.
+	
+	I am a hopeful mathematician, and a moonlight programmer.
+}
+
+\frame
+{
+	\begin{itemize}
+		\item Twitter (\href{https://twitter.com/emi1ypi}{@emi1ypi})
+		\item Meetups in NYC: NY Homotopy Type Theory, NY Category Theory, and the NY Haskell User Group. 
+		\item Discord: Haskell $\cap$ Dank Memes: \href{https://discord.gg/2x2fYSK}{https://discord.gg/2x2fYSK}. 
+		\item Personal: All of my slides and meetup content are hosted at \href{https://github.com/cohomolo-gy}{cohomolo.gy}.
+	\end{itemize}
+	
+}
+
+\frame
+{
+	I got my start in Scala, with Runar's \textit{Functional Programming in Scala} (the \textcolor{red}{red one} - there is now a \textcolor{blue}{blue one})
+}
+
+
+\frame
+{ 
+	I now work at a company called \textbf{Kadena}, designing a language and a couple of cool blockchains
+	\begin{center}
+	
+		\includegraphics[scale=0.3]{kadena}
+	\end{center}
+	
+}
+
+\subsection{Why are we here?}
+
+\frame
+{ 
+	Today, we're going to learn to \textbf{count}. Then we will learn to \textbf{add}, \textbf{multiple}, and even \textbf{take powers}. 
+}
+
+\frame
+{ 
+	...and we will do this with the language of Type Theory, Category Theory, and Constructive Logic. 
+}
+
+\frame
+{ 
+	Many of you know these topics already. Much of it is folklore within the community. But there are new ways of thinking about it that I gaurantee you haven't seen before, and some of it even translates into our work on Profunctor Optics! 
+}
+
+\frame
+{ 
+	If Bartosz is in this audience, everyone stare at him right now. 
+}
+
+\frame
+{ 
+	We'll see if we have time for that last one. If we don't get to it, it will be included as an optional set of slides. 
+}
+
+\subsection{What and How?}
+
+\frame
+{ 
+	First, we'll start off with some exercises to illustrate the point, proving free theorems and basic facts about types (e.g. reasoning through why \red{$\forall a. a \to a$} has precisely 1 inhabitant), and then draw direct lines with the Lambek correspondence. 
+}
+
+\frame
+{ 
+	Second, we will try to understand the Leibniz perspective and how it informs the Curry-Howard correspondence. 
+}
+
+\frame
+{ 
+	Third, we will begin to build the requisite knowledge for understanding the Yoneda perspective, and build some categorical constructs, and an understanding of representation. 
+}
+
+\frame
+{ 
+	Then, we will tie it all together. 
+}
+
+\frame
+{ 
+	Special thanks to Jon Pretty (\href{https://twitter.com/propensive}{@propensive})
+}
+
+\section{Some Type Arithmetic}
+
+\frame
+{
+	Let's do a quick warm up 
+}
+
+\subsection{Ground Rules}
+
+\frame
+{ 
+	We will use the following conventions: 
+	
+	\begin{itemize}
+		\item the type \red{()} with precisely 1 inhabitant (called \blue{Unit}) will be denoted by the number \red{1}. 
+		\item the type with no inhabitants, \blue{Nothing} or \red{undefined} will be denoted \red{0}. 
+		\item Function types will be denoted by \red{$a \to b$} or by the notation \red{$b^a$}. 
+		\item Universal quantification is given by \red{forall} or \red{$\forall$}.
+	\end{itemize}
+}
+
+\frame
+{
+	\begin{itemize}
+		\item Our calculus assumes that we have all finite coproducts and will denote them by the plus sign \red{+}. In Scala and Haskell, the binary coproduct is \red{Either}.
+		\item Our calculus assumes that we have all finite products, and we will denote they by the times sign \red{*}. In Scala and Haskell, the binary product is \red{(,)} or (\red{(,)} is an alias for \blue{Tuple2} in Scala.
+	\end{itemize}
+}
+
+\frame
+{ 
+	Proposition: Suppose we were to treat a polymorphic like your standard high school arithmetic. What would this arithmetic look like? 
+}
+
+\subsection{Addition}
+
+\frame
+{ 
+	Does \mred{1 + 1 = 2}? How can we tell? 
+}
+
+\begin{frame}[fragile]
+	By simple counting. Axiomatically, \red{1} is the type with \red{1} inhabitant, so
+	\begin{minted}{haskell}
+	
+	1 + 1  
+	= () + ()
+	= Either () ()
+	\end{minted}
+\end{frame}
+
+\frame
+{ 
+	By inspection, we see that \red{Either} has precisely two cases - \blue{Left} and \blue{Right} containing a single type. Thus, two cases, with one inhabitant in each case. Therefore we have 2 inhabitants!
+}
+
+\frame
+{ 
+	How about \mred{Maybe} containing values of type \mblue{\bm{Bool} = \{ \top, \bot\}}? 
+}
+
+\begin{frame}[fragile]
+
+Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has precisely two inhabitants
+	\begin{minted}{haskell}
+	
+	Maybe Bool
+	= Nothing + Just (True + False)
+	= 1 + 1 + 1
+	= 3
+	\end{minted}
+\end{frame}
+
+\frame
+{
+	Simple right? Lets move on.
+}
+
+\subsection{Multiplication}
+
+\frame
+{
+
+	Multiplication operates in the similar way. Using products, we can count \mred{\bm{Bool} * \bm{Bool}}. We have precisely four cases: 
+	
+	\begin{itemize}	
+		\item \mblue{(True, True)}
+		\item \mblue{(True, False)}
+		\item \mblue{(False, True)}
+		\item \mblue{(False, False)} 
+	\end{itemize}
+}
+
+\frame
+{
+	This works out as well! How about exponents?
+}
+
+\subsection{Exponentiation}
+
+
+\subsection{() and ⊥}
+
+\end{document}
