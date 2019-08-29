@@ -72,7 +72,7 @@
 \frame{\titlepage}
 
 \section[Outline]{}
-\frame{\tableofcontents}
+\frame{\tableofcontents[hideallsubsections]}
 
 \section{Introduction}
 \subsection{Who am I?}
@@ -120,12 +120,12 @@
 
 \frame
 { 
-	...and we will do this with the language of Type Theory, Category Theory, and Constructive Logic. 
+	...and we will do this with the language of Type Theory, Category Theory, and Constructive Logic. Hopefully you will be converted to Computational Trinitarianism by the time we're done.
 }
 
 \frame
 { 
-	Many of you know these topics already. Much of it is folklore within the community. But there are new ways of thinking about it that I gaurantee you haven't seen before, and some of it even translates into our work on Profunctor Optics! 
+	Many of you know these topics already without knowing the details. Much of it is folklore within the community. But there are new ways of thinking about it that I gaurantee you haven't seen before, and some of it even translates into our work on Profunctor Optics! 
 }
 
 \frame
@@ -196,7 +196,7 @@
 
 \frame
 { 
-	Proposition: Suppose we were to treat a polymorphic like your standard high school arithmetic. What would this arithmetic look like? 
+	Proposition: Suppose we were to treat a polymorphic type like your standard high school arithmetic. What would this arithmetic look like? 
 }
 
 \subsection{Addition}
@@ -213,6 +213,7 @@
 	1 + 1  
 	= () + ()
 	= Either () ()
+	= 2
 	\end{minted}
 \end{frame}
 
@@ -265,7 +266,499 @@ Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has p
 
 \subsection{Exponentiation}
 
+\begin{frame}[fragile]
+	Let's consider a function \mred{Bool \to Bool}. How do we count the number of functions we have? Well, we can list them out: 
+	
+	\begin{minted}{haskell}
+		k1 :: Bool -> Bool
+		k1 b 
+		  | True = True
+		  | False = False 
+		
+		k2 :: Bool -> Bool 
+		k2 b 
+		  | True = True
+		  | False = True 
+		  		
+		-- and so on	
+	\end{minted}
+	
+\end{frame}
 
-\subsection{() and ⊥}
+\begin{frame}[fragile]
+
+	tl;dr there are exactly 4 inabitants. Now, consider the functions
+	
+	\begin{minted}{haskell}
+		f :: Maybe Bool -> Bool
+		f ...
+	\end{minted}
+\end{frame}
+
+\frame
+{
+	Upon inspection you might find that there are precisely 8 such functions. Inductively, we see that there are \mred{|b|^{|a|}}-many inhabitants to the type \mred{a \to b}. The cardinality of this type behaves like exponentiation in $\mathbb{N}$!
+}
+
+\subsection{$\top$ and $\bot$}
+
+\frame
+{
+	Considering all we have just discussed, there are caveats to this calculus. For example, how many inhabitants are there in the type \mred{0 \to 1}? How about \mred{1 \to 0}? \mred{0 \to 0}?
+}
+
+\subsection{A correspondence Pt. 1}
+\frame
+{
+	The analogy so far: 
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			Types & \# of Inhabitants  & Sets & Categories \\
+			\hline a       & $|A|$ & ?  & ? \\
+			(a, b) &  $|A| \times |B| $ & ? & ? \\
+			Either a b & $|A| + |B|$ & ? & ? \\
+			$a \to b$ & $|B|^{|A|}$ & ? & ? \\
+			() & 1 & ? & ? \\
+			Void & 0 & ? & ? \\ \hline
+		\end{tabular}
+	\end{center}
+
+}
+
+\frame
+{ 
+	\textbf{Claim}: we can fill in the rest of the table with direct analogies from Set theory and Category theory. 
+}
+
+
+\begin{frame}[fragile]
+	What does this look like?
+	
+	\begin{center}
+	\begin{minted}[escapeinside=||,mathescape]{haskell}
+	
+	leftUnitP  :: (|$1$| |$\times$| a) = a
+	commuteP   :: (a |$\times$| b) = (b |$\times$| a)
+	associateP :: ((a |$\times$| b) |$\times$| c) = (a |$\times$| (b |$\times$| c))
+	leftUnitC  :: (|$0$| + a) = a
+	commuteC   :: (a + b) = (b + a)
+	associateC :: ((a + b) + c) = (a + (b + c))
+	currying   :: |$c^{a \times b}$| = |$(c^b)^a$|
+	leftUnitF  :: |$a^1$| = a
+	rightUnitF :: |$1^a$| = |$1$|
+	\end{minted}
+	
+	\end{center}
+\end{frame}
+
+\frame
+{ 
+	Why do we care in the first place? 
+}
+
+\frame
+{ 
+	Because proving that a type \mblue{T} has inhabitants is equivalent to proving the theorem correspondnig with \mblue{T} due to the Curry-Howard-Lambek correspondence.
+}
+
+
+
+\section{The Leibniz Perspective}
+
+\subsection{When are things equal?}
+\frame
+{
+	When are two things equal? You may have noticed our use of $=$ in the previous slides, but that was a convenient lie.
+}
+
+\frame
+{
+	Are these things equal? 
+	
+	\begin{itemize}
+		\item \blue{1729}
+		\item \mblue{12^3 + 1^3}
+		\item "The first number expressible by the sum of two cubes in two different ways"
+	\end{itemize}
+}
+
+\frame
+{
+	When viewed as expressions, \blue{1729} and \mblue{12^3 + 1^3} are different.
+}
+
+\frame
+{
+	When viewed as integers, they are the same. 
+}
+
+\subsection{Isomorphisms}
+\frame
+{
+	Enumeration in this sense is an \red{isomorphism} from a type to a finite set. 
+}
+
+
+\begin{frame}[fragile]
+
+	\begin{minted}{haskell}
+	data Iso a b = Iso 
+	    { to   :: a -> b
+	    , from :: b -> a
+	    }
+	    -- fromTo :: (x :: a) -> (from . to) x = x
+	    -- toFrom :: (x :: b) -> (to . from) x = x
+	\end{minted}
+\end{frame}
+
+\frame
+{
+	We have been suffering from an abuse of notation - what we've really been saying is that two things are equal if we can exhibit an isomorphism between the two.
+}
+
+\frame
+{ 
+	\begin{prop}[Equality Preservation]
+		if \red{A} and \blue{B} are isomorphic, and \mred{a_1, a_2 : A}, and \mblue{b_1, b_2 : B}, then \mred{a_1 = a_2} $\iff$ \mblue{b_1 = b_2}.
+	\end{prop}
+}
+
+\subsection{Identity of Indiscernibles}
+\frame
+{
+
+	\begin{prop}[Gottfried Wilhelm Leibniz, 1646-1716]
+		"For any x and y, if x is identical to y, then x and y have all the same properties. For any x and y, if x and y have all the same properties, then x is identical to y."
+	\end{prop}
+	
+}
+
+\frame
+{
+
+	In symbols, \mblue{x = y \iff \forall P. Px = Py} where $P$ is quantified over all properties of $x$.
+		
+}
+
+\subsection{Putting it to work}
+\begin{frame}[fragile]
+Let's see some interesting isomorphisms.
+
+\begin{minted}{haskell}
+leftUnitP :: Iso ((), a) a
+leftUnitP = Iso (\((), a) -> a)
+                (\a -> ((), a))
+commuteP :: Iso (a, b) (b, a)
+commuteP = Iso (\(a, b) -> (b, a))
+               (\(b, a) -> (a, b))
+associateP :: Iso ((a, b), c) (a, (b, c))
+associateP = Iso (\((a, b), c) -> (a, (b, c)))
+                 (\(a, (b, c)) -> ((a, b), c))
+\end{minted}
+\end{frame}
+\begin{frame}[fragile]
+What does this remind you of?
+\begin{minted}{haskell}
+rightUnitP  :: Iso (a, ()) a
+leftUnitP   :: Iso ((), a) a
+associateP  :: Iso ((a, b), c) (a, (b, c))
+\end{minted}
+\end{frame}
+\begin{frame}[fragile]
+\begin{minted}{haskell}
+leftUnitC :: Iso (Either Void a) a
+leftUnitC = ...
+commuteC :: Iso (Either a b) (Either b a)
+commuteC = ...
+associateC :: Iso (Either (Either a b) c)
+                  (Either a (Either b c))
+associateC =
+  Iso (\case Left (Left a)  -> Left a;
+             Left (Right b) -> Right (Left b);
+             Right c        -> Right (Right c))
+      (\case Left a          -> Left (Left a);
+             Right (Left b)  -> Left (Right b);
+             Right (Right c) -> Right c)
+\end{minted}
+\end{frame}
+
+\frame
+{ 
+	So what do our arithmetic rules \textit{really} say about our types?
+}
+
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+leftUnitP  :: (|$1$| |$\times$| a) |$\cong$| a
+commuteP   :: (a |$\times$| b) |$\cong$| (b |$\times$| a)
+associateP :: ((a |$\times$| b) |$\times$| c) |$\cong$| (a |$\times$| (b |$\times$| c))
+leftUnitC  :: (|$0$| + a) |$\cong$| a
+commuteC   :: (a + b) |$\cong$| (b + a)
+associateC :: ((a + b) + c) |$\cong$| (a + (b + c))
+currying   :: |$c^{a \times b}$| |$\cong$| |$(c^b)^a$|
+leftUnitF  :: |$a^1$| |$\cong$| a
+rightUnitF :: |$1^a$| |$\cong$| |$1$|
+\end{minted}
+\end{frame}
+
+\subsection{The million dollar question}
+
+\frame
+{ 
+	By inspection, we can show that there is a correspondence between sets and types by looking at their cardinalities and inhabitants respectively. 
+}
+
+\frame
+{
+	What type has precisely \mred{(a * b)}-many inhabitants? What set? Likewise, what type has precisely \mred{(a + b)}-many inhabitants? What set?
+}
+
+\frame
+{
+	We continue to build the picture.
+}
+
+\begin{frame}
+There is a correspondence between types, sets, natural numbers.
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Types & Sets & \# of Inhabitants & Categories \\
+\hline
+a       & $A$ & $|A|$  & ? \\
+(a, b) & $A \times B$ & $|A| \times |B|$ & ? \\
+Either a b & $A \sqcup B$ & $|A| + |B|$ & ? \\
+$a \to b$ &  set functions & $|B|^{|A|}$ & ? \\
+() & $\{*\}$ & 1 & ? \\
+Void & $\emptyset$ & 0 & ? \\ \hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\section{The Yoneda Perspective}
+
+
+\subsection{Some Category Theory}
+
+\frame
+{
+	\textbf{Claim}: the same correspondence can be made within the language of a bicartesian-closed category. 
+}
+
+\frame
+{
+	Lets elaborate on what that means. But first, some definitions.
+}
+
+\frame
+{
+	\begin{definition}[Category]
+		A \textbf{category} $\cc$ consists of the following data: 
+		
+		\begin{itemize}
+			\item a collection of \textbf{objects} \mred{x, y, z,...}
+			\item a collection of \textbf{morphisms} \mred{f,g,h,...}
+		\end{itemize}
+		
+		Such that 
+		
+		\begin{itemize}
+			\item each morphism has specified \textbf{domain} and \textbf{codomain} objects so that the notation \mred{f : x \to y} signifies a morphism with domain \mred{x} and codomain \mred{y}. 
+			\item each object has an associated \textbf{identity} morphism \mblue{1_x : x \to x} which acts as a two-sided unital element for composition.
+			\item to each pair of morphisms \mred{f : x \to y}, \mblue{g : y \to z}, there exists a \textbf{composite} arrow $h : \red{x} \to \blue{z}$ where $h :\equiv \blue{g}\red{f}$. 
+		\end{itemize}
+	\end{definition}
+}
+
+\frame
+{
+	For every category we may speak of its dual notion, $\opc$, the \textbf{opposite} category of $\cc$, consisting of the same object data, but with the domain and codomain of each morphism reversed.
+}
+
+\frame
+{
+	This data is subject to some axioms. 
+	
+	\begin{itemize}
+	
+		\item For any $f : x \to y$, $f1_x = f =  1_y f$. 
+		\item For any composable triple $f,g,h$, $h(gf) = (hg)f$, and will simply be denoted $hgf$.
+		\item Between any two objects $x, y$ in a category $\cc$, there exists an object $\cc(x,y)$ consisting of all morphisms with domain $x$ and codomain $y$. This is usually called $Hom_{\cc}(x, y)$.
+	\end{itemize}
+}
+
+\frame
+{
+
+	Indeed, we are familiar with morphisms, identities, and composition already. In haskell, these translate into types \mred{a \to b}, the* identity function \mred{id}, and composition \mred{(.)}. 
+	
+	In scala, these are roughly the same, modulo naming conventions - \mblue{A \Rightarrow B}, \mblue{identity}, \mblue{compose}.  
+}
+
+\frame
+{ 
+	Isomorphisms in this context become a pair of morphisms \mred{ f : c \to d} and \mblue{g : d \to c} such that $\blue{g}\red{f} = 1_c$ and $\red{f}\blue{g} = 1_y$.
+	
+	 If \mred{x} and \mblue{y} are isomorphic, we will denote this by $\red{x} \cong \blue{y}$.
+}
+
+\frame
+{
+	
+	\begin{definition}[Functor]
+		A functor $F : \cc \to \dd$ between categories consists of the following data: 
+		
+		\begin{itemize}
+			\item an object $Fc$ in $\dd$ for every object c of $\cc$
+			\item a morphism $Ff : Fc \to Fd$ in $\dd$ for each morphism $f : c \to d$ of $\cc$.
+		\end{itemize}
+		
+		Additionally, we require that $Fg \cdot Ff = F(gf)$ when $g$ and $f$ are a composable pair, and that for every object $c$ in $\cc$, $F1_c = 1_{Fc}$.
+	\end{definition}
+}
+
+\begin{frame}[fragile]
+In Haskell, we represent this data as a typeclass
+
+	\begin{minted}{haskell}
+	class fmap :: (a -> b) -> f a -> f c
+	-- fmap id fa = fa 
+	-- fmap g . fmap f = fmap (g . f)
+	\end{minted}
+	
+\end{frame}
+
+\frame
+{
+	Functors that act uniformly on arrows are called \textbf{covariant}. However, if a functor is mapping to or from an opposite category to a normal category, then one calls these functors \textbf{contravariant}.
+	
+	 Operationally, this can be seen as "flipping the direction of arrows" in the target category. 
+}
+
+\frame
+{
+	This is often unnecessary data, as the saying a "$F$ is a contravariant functor from $\cc$ to $\dd$" is precisely saying one has a covariant functor $F : \opc \to \dd$. When it matters, I'll just tell you which one is opposite.
+
+}
+
+\subsection{Initial and Terminal Objects}
+
+\frame
+{
+	"Special" objects are determined by how morphisms to or from them act in relation to other objects. 
+}
+
+\frame
+{
+	\begin{definition}{Terminal and Initial objects}
+		An object $c$ of $\cc$ is called \textbf{terminal} if there is exactly 1 unique morphism from any other object in $\cc$ to $c$. 
+		
+		Dually,  an object $c$ of $\cc$ is \textbf{initial} if there is exactly 1 unique morphism to any other object in $\cc$. 
+	\end{definition}
+}
+
+\frame
+{
+	We have seen two such objects that act like terminal and initial objects already: \mred{()} and \mblue{\bot}
+}
+
+\frame
+{
+	Indeed for every type $a$, the types \mred{a \to ()} and \mblue{\bot \to a} has precisely one inhabitant . 
+}
+
+\begin{frame}[fragile]
+
+Namely, we have the following functions: 
+
+	\begin{minted}[escapeinside=||,mathescape]{haskell}
+	-- a -> ()
+	k :: a -> ()
+	k = const ()
+	
+	-- |$\bot$| -> a
+	t :: Void -> a
+	t = absurd
+	\end{minted}
+\end{frame}
+
+\subsection{Products and Coproducts}
+
+\frame
+{
+
+	In the same way that we have terminal and initial objects, constructions for products and coproducts in category theory follow suit.
+}
+
+\frame
+{
+	\begin{definition}[Product]
+	
+		A \textbf{product} in a category $\cc$ is an object $P$ together with morphisms $p_c : P \to c$ and $p_d : P \to d$ for $c,d$ in $\cc$ such that for any other object $N$ with morphisms $f_c : N \to c$ and $f_d : N \to d$, then each $f_{(-)}$ can be factored through a unique function $f : N \to P$ such that $f_c = p_cf$ and $f_d = p_df$. 
+	\end{definition}
+}
+
+\begin{frame}[fragile]
+	This is diagram gives this data succinctly: 
+	
+	\begin{center}
+	\begin{tikzcd}
+	& & c
+	\\ N \ar[r, "f" description, dotted] \ar[urr, "f_c", bend left] \ar[drr, "f_d", bend right, swap] & P \ar[ur, "p_c"] \ar[dr, "p_d", swap]
+	\\ & & d
+	\end{tikzcd}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	We are all familar with these: in Haskell and Scala, we have the type \mred{(a, b)}. Its defined by having two operators: 
+	
+	\begin{minted}{haskell}
+	fst :: (a,b) -> a
+	fst (a,_) = a
+	
+	snd :: (a,b) -> b
+	snd (_,b) = b
+	\end{minted}
+\end{frame}
+
+\frame
+{ 
+	\begin{definition}[Coroduct]
+	
+		A \textbf{coproduct} in a category $\cc$ is an object $P$ together with morphisms $i_c : c \to C $ and $i_d : C \to d$ for $c,d$ in $\cc$ such that for any other object $N$ with morphisms $f_c : c \to N$ and $f_d : d \to N$, then each $f_{(-)}$ can be factored through a unique function $f : C \to N$ such that $f_c = fi_c$ and $f_d = fi_d$. 
+	\end{definition}
+	
+}
+
+\begin{frame}[fragile]
+	This is diagram gives this data succinctly: 
+	
+	\begin{center}
+	\begin{tikzcd}
+	c \ar[dr, "i_c", swap] \ar[drr, "f_c", bend left]
+	\\ & C \ar[r, "f" description, dotted] & N
+	\\ d \ar[ur, "i_d"] \ar[urr, "f_d", bend right, swap]
+	\end{tikzcd}
+	\end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+	We are all familar with these: in Haskell and Scala, we have the type \blue{Either} \blue{a} \blue{b}. Its defined by having two operators: 
+	
+	\begin{minted}{haskell}
+	inl :: a -> Either a b
+	inl = Left
+	
+	inr :: b -> Either a b
+	inr = Right
+	\end{minted}
+\end{frame}
+
+\
+\section{Bringing it all back home}
+
 
 \end{document}

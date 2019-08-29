@@ -1,9 +1,9 @@
-
-Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has precisely two inhabitants
-	\begin{minted}{haskell}
+We are all familar with these: in Haskell and Scala, we have the type \blue{Either} \blue{a} \blue{b}. Its defined by having two operators:
 	
-	Maybe Bool
-	= Nothing + Just (True + False)
-	= 1 + 1 + 1
-	= 3
+	\begin{minted}{haskell}
+	inl :: a -> Either a b
+	inl = Left
+	
+	inr :: b -> Either a b
+	inr = Right
 	\end{minted}

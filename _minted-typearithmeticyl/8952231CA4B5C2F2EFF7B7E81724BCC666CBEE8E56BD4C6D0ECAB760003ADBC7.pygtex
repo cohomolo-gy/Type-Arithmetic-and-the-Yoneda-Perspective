@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{n}{inl} \PYG{o+ow}{::} \PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Either} \PYG{n}{a} \PYG{n}{b}
+	\PYG{n}{inl} \PYG{o+ow}{=} \PYG{k+kt}{Left}
+	
+	\PYG{n}{inr} \PYG{o+ow}{::} \PYG{n}{b} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Either} \PYG{n}{a} \PYG{n}{b}
+	\PYG{n}{inr} \PYG{o+ow}{=} \PYG{k+kt}{Right}
+\end{Verbatim}

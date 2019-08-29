@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+	\PYG{c+c1}{\PYGZhy{}\PYGZhy{} a \PYGZhy{}\PYGZgt{} ()}
+	\PYG{n}{k} \PYG{o+ow}{::} \PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n+nb}{()}
+	\PYG{n}{k} \PYG{o+ow}{=} \PYG{n}{const} \PYG{n+nb}{()}
+	
+	\PYG{c+c1}{\PYGZhy{}\PYGZhy{} |$\bpt$| \PYGZhy{}\PYGZgt{} a}
+	\PYG{n}{t} \PYG{o+ow}{::} \PYG{k+kt}{Void} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}
+	\PYG{n}{t} \PYG{o+ow}{=} \PYG{n}{absurd}
+\end{Verbatim}

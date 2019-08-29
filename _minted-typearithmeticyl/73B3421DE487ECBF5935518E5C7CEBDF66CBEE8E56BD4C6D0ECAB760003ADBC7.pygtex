@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{n}{f} \PYG{o+ow}{::} \PYG{k+kt}{Maybe} \PYG{k+kt}{Bool} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Bool}
+		\PYG{n}{f} \PYG{o}{...}
+\end{Verbatim}

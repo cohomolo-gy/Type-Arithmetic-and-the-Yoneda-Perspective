@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+		\PYG{n}{k1} \PYG{o+ow}{::} \PYG{k+kt}{Bool} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Bool}
+		\PYG{n}{k1} \PYG{n}{b} \PYG{o+ow}{=} \PYG{k+kr}{case} \PYG{n}{b} \PYG{k+kr}{of}
+		  \PYG{k+kt}{True} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{True}
+		  \PYG{k+kt}{False} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{False}
+		
+		\PYG{n}{k2} \PYG{o+ow}{::} \PYG{k+kt}{Bool} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Bool}
+		\PYG{n}{k2} \PYG{n}{b} \PYG{o+ow}{=} \PYG{k+kr}{case} \PYG{n}{b} \PYG{k+kr}{of}
+	 	  \PYG{k+kt}{False} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{True}
+		  \PYG{k+kt}{True} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{True}
+		
+		\PYG{c+c1}{\PYGZhy{}\PYGZhy{} and so on	}
+\end{Verbatim}

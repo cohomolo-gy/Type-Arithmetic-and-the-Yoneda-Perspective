@@ -7,3 +7,17 @@
 \beamer@subsectionintoc {3}{1}{Ground Rules}{20}{0}{2}
 \beamer@subsectionintoc {3}{2}{Addition}{23}{0}{2}
 \beamer@subsectionintoc {3}{3}{Multiplication}{29}{0}{2}
+\beamer@subsectionintoc {3}{4}{Exponentiation}{31}{0}{2}
+\beamer@subsectionintoc {3}{5}{$\top $ and $\bot $}{34}{0}{2}
+\beamer@subsectionintoc {3}{6}{A correspondence Pt. 1}{35}{0}{2}
+\beamer@sectionintoc {4}{The Leibniz Perspective}{40}{0}{3}
+\beamer@subsectionintoc {4}{1}{When are things equal?}{41}{0}{3}
+\beamer@subsectionintoc {4}{2}{Isomorphisms}{45}{0}{3}
+\beamer@subsectionintoc {4}{3}{Identity of Indiscernibles}{49}{0}{3}
+\beamer@subsectionintoc {4}{4}{Putting it to work}{51}{0}{3}
+\beamer@subsectionintoc {4}{5}{The million dollar question}{56}{0}{3}
+\beamer@sectionintoc {5}{The Yoneda Perspective}{60}{0}{4}
+\beamer@subsectionintoc {5}{1}{Some Category Theory}{61}{0}{4}
+\beamer@subsectionintoc {5}{2}{Initial and Terminal Objects}{72}{0}{4}
+\beamer@subsectionintoc {5}{3}{Products and Coproducts}{77}{0}{4}
+\beamer@sectionintoc {6}{Bringing it all back home}{84}{0}{5}

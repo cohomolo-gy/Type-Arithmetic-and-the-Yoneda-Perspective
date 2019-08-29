@@ -3,4 +3,5 @@
 	\PYG{l+m+mi}{1} \PYG{o}{+} \PYG{l+m+mi}{1}
 	\PYG{o+ow}{=} \PYG{n+nb}{()} \PYG{o}{+} \PYG{n+nb}{()}
 	\PYG{o+ow}{=} \PYG{k+kt}{Either} \PYG{n+nb}{()} \PYG{n+nb}{()}
+	\PYG{o+ow}{=} \PYG{l+m+mi}{2}
 \end{Verbatim}
