@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k+kr}{newtype} \PYG{k+kt}{Reader} \PYG{n}{t} \PYG{n}{a} \PYG{o+ow}{=} \PYG{k+kt}{Reader} \PYG{p}{(}\PYG{n}{t} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}\PYG{p}{)}
+	\PYG{k+kr}{instance} \PYG{k+kt}{Functor} \PYG{p}{(}\PYG{k+kt}{Reader} \PYG{n}{t}\PYG{p}{)} \PYG{k+kr}{where}
+	  \PYG{c+c1}{\PYGZhy{}\PYGZhy{} fmap :: (a \PYGZhy{}\PYGZgt{} b) \PYGZhy{}\PYGZgt{} Reader t a \PYGZhy{}\PYGZgt{} Reader t b}
+	  \PYG{n}{fmap} \PYG{n}{f} \PYG{p}{(}\PYG{k+kt}{Reader} \PYG{n}{t}\PYG{p}{)} \PYG{o+ow}{=} \PYG{k+kt}{Reader} \PYG{p}{(}\PYG{n}{f} \PYG{o}{.} \PYG{n}{t}\PYG{p}{)}
+	
+	\PYG{k+kr}{newtype} \PYG{k+kt}{Coreader} \PYG{n}{t} \PYG{n}{a} \PYG{o+ow}{=} \PYG{k+kt}{Coreader} \PYG{p}{(}\PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{t}\PYG{p}{)}
+	\PYG{k+kr}{instance} \PYG{k+kt}{Contravariant} \PYG{p}{(}\PYG{k+kt}{Coreader} \PYG{n}{t}\PYG{p}{)} \PYG{k+kr}{where}
+	  \PYG{n}{contramap} \PYG{n}{f} \PYG{p}{(}\PYG{k+kt}{Coreader} \PYG{n}{k}\PYG{p}{)} \PYG{o+ow}{=} \PYG{k+kt}{Coreader} \PYG{p}{(}\PYG{n}{k} \PYG{o}{.} \PYG{n}{f}\PYG{p}{)}
+\end{Verbatim}

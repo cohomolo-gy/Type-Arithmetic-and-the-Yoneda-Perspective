@@ -15,6 +15,7 @@
 \usepackage{hyperref}
 \usepackage{graphicx} \graphicspath{ {./} }
 \usepackage{xcolor}
+\usepackage{bbold}
 
 
 \newcommand{\cat}[1]{\bm{ \mathsf{#1} }}
@@ -30,7 +31,10 @@
 \newcommand{\ope}{\op{\ee}}
 \newcommand{\mono}{\rightarrowtail}
 \newcommand{\epi}{\twoheadrightarrow}
-\newcommand{\one}{\mathbb{1}}
+\newcommand{\zero}{\bm{\mathbb{0}}}
+\newcommand{\one}{\bm{\mathbb{1}}}
+\newcommand{\two}{\bm{\mathbb{2}}}
+\newcommand{\three}{\bm{\mathbb{3}}}
 \newcommand{\bg}{\cat{BG}}
 \newcommand{\bgg}{\cat{BG'}}
 \newcommand{\nt}{\Rightarrow}
@@ -42,6 +46,7 @@
 \newcommand{\mred}[1]{\textcolor{red}{$#1$}}
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
 \newcommand{\mblue}[1]{\textcolor{blue}{$#1$}}
+
 
 \setbeamertemplate{navigation symbols}{\insertframenumber{}}
 \colorlet{shadecolor}{gray!15}
@@ -93,6 +98,8 @@
 		\item Personal: All of my slides and meetup content are hosted at \href{https://github.com/cohomolo-gy}{cohomolo.gy}.
 	\end{itemize}
 	
+	
+	If you ever want to talk category theory or programming, I'm around to talk, help, or mentor (within reason).
 }
 
 \frame
@@ -130,12 +137,7 @@
 
 \frame
 { 
-	If Bartosz is in this audience, everyone stare at him right now. 
-}
-
-\frame
-{ 
-	We'll see if we have time for that last one. If we don't get to it, it will be included as an optional set of slides. 
+	We'll see if we have time for that last one. If we don't get to it, it will be included as an informal unconference.
 }
 
 \subsection{What and How?}
@@ -174,15 +176,18 @@
 
 \subsection{Ground Rules}
 
+
 \frame
 { 
 	We will use the following conventions: 
 	
 	\begin{itemize}
-		\item the type \red{()} with precisely 1 inhabitant (called \blue{Unit}) will be denoted by the number \red{1}. 
-		\item the type with no inhabitants, \blue{Nothing} or \red{undefined} will be denoted \red{0}. 
+		\item the type \red{()} with precisely 1 inhabitant (called \blue{Unit}) will be denoted by the numeral  \mred{\one}. 
+		\item the type with no inhabitants, \blue{Nothing} or \red{undefined} will be denoted \mred{\zero}. 
 		\item Function types will be denoted by \red{$a \to b$} or by the notation \red{$b^a$}. 
 		\item Universal quantification is given by \red{forall} or \red{$\forall$}.
+		\item The notation $|\cdot| : \cat{Type} \to \mathbb{N}$ will denote the function taking a type to its number of type inhabitants
+		\item The notation $[\cdot] : \mathbb{N} \to \cat{Type} $ will denote the function taking a natural number $n$ and constructing a type with precisely $n$ inhabitants. 
 	\end{itemize}
 }
 
@@ -192,6 +197,30 @@
 		\item Our calculus assumes that we have all finite coproducts and will denote them by the plus sign \red{+}. In Scala and Haskell, the binary coproduct is \red{Either}.
 		\item Our calculus assumes that we have all finite products, and we will denote they by the times sign \red{*}. In Scala and Haskell, the binary product is \red{(,)} or (\red{(,)} is an alias for \blue{Tuple2} in Scala.
 	\end{itemize}
+}
+
+
+\frame
+{
+	We also assume our types are sufficiently set-like as to be usefully enumerable. 
+}
+
+\frame
+{
+	
+	\begin{definition}[Isomorphism]
+	
+		An \textit{isomorphism} is a pair of functions \mred{to : a \to b} and \mblue{from : b \to a} such that $\red{to} \cdot \blue{from} = \blue{from} \cdot \red{to} = \cat{id}$. 
+		
+		The existence of an isomorphism between types will be denoted $\red{a}  \sim \blue{b}$. 
+		
+	\end{definition}
+}
+
+
+\frame
+{
+	There might be some confusion regarding what exactly we mean by “inhabitants”, e.g. are $1 + 1$ and $2$ different inhabitants of type $\cat{Int}$? For now we will treat two expressions of type \mred{a} to be separate inhabitants of \mred{a} if and only if there is some predicate $f : \red{a} \to \cat{Bool}$ that distinguishes between then. 
 }
 
 \frame
@@ -207,41 +236,48 @@
 }
 
 \begin{frame}[fragile]
-	By simple counting. Axiomatically, \red{1} is the type with \red{1} inhabitant, so
-	\begin{minted}{haskell}
+	By simple counting. Axiomatically, \mred{\one} is the type with 1 inhabitant, so
+	\begin{minted}[escapeinside=||,mathescape]{haskell}
 	
-	1 + 1  
-	= () + ()
-	= Either () ()
-	= 2
+	|\mred{\one}| +  |\mred{\one}|
+	~ () + ()
+	~ Either () ()
+	-- [|Either () ()|]
+	~  |\mred{\two}|
 	\end{minted}
+	
 \end{frame}
 
 \frame
 { 
-	By inspection, we see that \red{Either} has precisely two cases - \blue{Left} and \blue{Right} containing a single type. Thus, two cases, with one inhabitant in each case. Therefore we have 2 inhabitants!
+	By inspection, we see that $\cat{Either}$ has precisely two cases - \blue{Left} and \red{Right} containing a single type. Thus, two cases, with one inhabitant in each case. Therefore we have 2 inhabitants! Note also that this is isomorphic to $\cat{Bool}$, since $\cat{Bool}$ has precisely 2 inhabitants. 
+}
+
+\frame
+{
+	Instead of referencing these types by their names, we'll just represent them as numerals $\one, \two, \three, \ldots$. 
 }
 
 \frame
 { 
-	How about \mred{Maybe} containing values of type \mblue{\bm{Bool} = \{ \top, \bot\}}? 
+	How about \mred{\cat{Maybe}} containing values of type \mblue{\two}? 
 }
 
 \begin{frame}[fragile]
 
-Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has precisely two inhabitants
-	\begin{minted}{haskell}
+Again, we can apply some natural deduction, nothing that  \mblue{\two} has precisely two inhabitants
+	\begin{minted}[escapeinside=||,mathescape]{haskell}
 	
-	Maybe Bool
-	= Nothing + Just (True + False)
-	= 1 + 1 + 1
-	= 3
+	Maybe | \mblue{\two}|
+	~ Nothing + Just | \mblue{\two}|
+	~ |\mblue{\one}| + | \mblue{\two}|
+	~ |\mblue{\three}| 
 	\end{minted}
 \end{frame}
 
 \frame
 {
-	Simple right? Lets move on.
+	Thus, the number of inhabitants of \mred{\cat{Maybe}} can be deduced to be $[1 + |\red{a}|]$ Lets move on.
 }
 
 \subsection{Multiplication}
@@ -249,13 +285,13 @@ Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has p
 \frame
 {
 
-	Multiplication operates in the similar way. Using products, we can count \mred{\bm{Bool} * \bm{Bool}}. We have precisely four cases: 
+	Multiplication operates in the similar way. Using products, we can count \mred{\cat{Bool} * \cat{Bool}}. We have precisely four cases: 
 	
 	\begin{itemize}	
-		\item \mblue{(True, True)}
-		\item \mblue{(True, False)}
-		\item \mblue{(False, True)}
-		\item \mblue{(False, False)} 
+		\item (\blue{True}, \blue{True})
+		\item(\blue{True}, \red{False})
+		\item (\red{False}, \blue{True})
+		\item (\red{False}, \red{False}) 
 	\end{itemize}
 }
 
@@ -267,7 +303,7 @@ Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has p
 \subsection{Exponentiation}
 
 \begin{frame}[fragile]
-	Let's consider a function \mred{Bool \to Bool}. How do we count the number of functions we have? Well, we can list them out: 
+	Let's consider a function \mred{\cat{Bool} \to \cat{Bool}}. How do we count the number of functions we have? Well, we can list them out: 
 	
 	\begin{minted}{haskell}
 		k1 :: Bool -> Bool
@@ -297,14 +333,20 @@ Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has p
 
 \frame
 {
-	Upon inspection you might find that there are precisely 8 such functions. Inductively, we see that there are \mred{|b|^{|a|}}-many inhabitants to the type \mred{a \to b}. The cardinality of this type behaves like exponentiation in $\mathbb{N}$!
+	Upon inspection you might find that there are precisely 8 such functions. Inductively, we see that there are \mred{|b|^{|a|}}-many inhabitants of the type \mred{a \to b}. The cardinality of this type behaves like exponentiation in $\mathbb{N}$!
 }
 
+\frame
+{
+
+As we will see later, \mred{a \to b} is a little bit different from coproducts and products in the way it interacts with \red{forall a} when we have (parametric) type polymorphism. The above formula can be used only if \red{a} and \red{b} are free from any universally quantified variables.
+
+}
 \subsection{$\top$ and $\bot$}
 
 \frame
 {
-	Considering all we have just discussed, there are caveats to this calculus. For example, how many inhabitants are there in the type \mred{0 \to 1}? How about \mred{1 \to 0}? \mred{0 \to 0}?
+	Considering all we have just discussed, there are caveats to this calculus. For example, how many inhabitants are there in the type \mred{\zero \to \one}? How about \mred{\one \to \zero}? \mred{\zero \to \zero}?
 }
 
 \subsection{A correspondence Pt. 1}
@@ -339,15 +381,15 @@ Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has p
 	\begin{center}
 	\begin{minted}[escapeinside=||,mathescape]{haskell}
 	
-	leftUnitP  :: (|$1$| |$\times$| a) = a
+	leftUnitP  :: (|$\one$| |$\times$| a) = a
 	commuteP   :: (a |$\times$| b) = (b |$\times$| a)
 	associateP :: ((a |$\times$| b) |$\times$| c) = (a |$\times$| (b |$\times$| c))
-	leftUnitC  :: (|$0$| + a) = a
+	leftUnitC  :: (|$\zero$| + a) = a
 	commuteC   :: (a + b) = (b + a)
 	associateC :: ((a + b) + c) = (a + (b + c))
 	currying   :: |$c^{a \times b}$| = |$(c^b)^a$|
-	leftUnitF  :: |$a^1$| = a
-	rightUnitF :: |$1^a$| = |$1$|
+	leftUnitF  :: |$a^{\one}$| = a
+	rightUnitF :: |$\one^a$| = |$\one$|
 	\end{minted}
 	
 	\end{center}
@@ -360,7 +402,7 @@ Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has p
 
 \frame
 { 
-	Because proving that a type \mblue{T} has inhabitants is equivalent to proving the theorem correspondnig with \mblue{T} due to the Curry-Howard-Lambek correspondence.
+	Because proving that a type \mblue{T} has inhabitants is equivalent to proving the theorem corresponding with \mblue{T} due to the Curry-Howard-Lambek correspondence.
 }
 
 
@@ -397,7 +439,7 @@ Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has p
 \subsection{Isomorphisms}
 \frame
 {
-	Enumeration in this sense is an \red{isomorphism} from a type to a finite set. 
+	Enumeration in this sense is an association of a representative of an equivalence class of \textbf{isomorphisms} of a type with a finite set. 
 }
 
 
@@ -421,7 +463,7 @@ Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has p
 \frame
 { 
 	\begin{prop}[Equality Preservation]
-		if \red{A} and \blue{B} are isomorphic, and \mred{a_1, a_2 : A}, and \mblue{b_1, b_2 : B}, then \mred{a_1 = a_2} $\iff$ \mblue{b_1 = b_2}.
+		if \red{A} and \blue{B} are isomorphic, and \mred{a_1, a_2 : A}, and \mblue{b_1, b_2 : B}, then \mred{a_1 = a_2} $\Leftrightarrow$ \mblue{b_1 = b_2}.
 	\end{prop}
 }
 
@@ -438,7 +480,7 @@ Again, we can apply some natural deduction, nothing that \mblue{\bm{Bool}} has p
 \frame
 {
 
-	In symbols, \mblue{x = y \iff \forall P. Px = Py} where $P$ is quantified over all properties of $x$.
+	In symbols, $\blue{x} = \red{y} \Leftrightarrow \forall P. P \blue{x} = P \red{y}$ where $P$ is quantified over all properties of \blue{x}.
 		
 }
 
@@ -491,15 +533,15 @@ associateC =
 
 \begin{frame}[fragile]
 \begin{minted}[escapeinside=||,mathescape]{haskell}
-leftUnitP  :: (|$1$| |$\times$| a) |$\cong$| a
+leftUnitP  :: (|$\one$| |$\times$| a) |$\cong$| a
 commuteP   :: (a |$\times$| b) |$\cong$| (b |$\times$| a)
 associateP :: ((a |$\times$| b) |$\times$| c) |$\cong$| (a |$\times$| (b |$\times$| c))
-leftUnitC  :: (|$0$| + a) |$\cong$| a
+leftUnitC  :: (|$\zero$| + a) |$\cong$| a
 commuteC   :: (a + b) |$\cong$| (b + a)
 associateC :: ((a + b) + c) |$\cong$| (a + (b + c))
 currying   :: |$c^{a \times b}$| |$\cong$| |$(c^b)^a$|
-leftUnitF  :: |$a^1$| |$\cong$| a
-rightUnitF :: |$1^a$| |$\cong$| |$1$|
+leftUnitF  :: |$a^{\one}$| |$\cong$| a
+rightUnitF :: |$\one^a$| |$\cong$| |$\one$|
 \end{minted}
 \end{frame}
 
@@ -512,7 +554,7 @@ rightUnitF :: |$1^a$| |$\cong$| |$1$|
 
 \frame
 {
-	What type has precisely \mred{(a * b)}-many inhabitants? What set? Likewise, what type has precisely \mred{(a + b)}-many inhabitants? What set?
+	What are the sets with cardinality $\red{a} \times \blue{b}$, $\red{a} + \blue{b}$, $1$, $0$, and $\blue{b}^{\red{a}}$-many inhabitants? 
 }
 
 \frame
@@ -537,10 +579,10 @@ Void & $\emptyset$ & 0 & ? \\ \hline
 \end{center}
 \end{frame}
 
-\section{The Yoneda Perspective}
+\section{Some Category Theory}
 
 
-\subsection{Some Category Theory}
+\subsection{The Basics}
 
 \frame
 {
@@ -583,16 +625,16 @@ Void & $\emptyset$ & 0 & ? \\ \hline
 	
 	\begin{itemize}
 	
-		\item For any $f : x \to y$, $f1_x = f =  1_y f$. 
+		\item For any $f : \blue{x} \to \red{y}$, $f1_{\blue{x}} = f =  1_{\red{y}} f$. 
 		\item For any composable triple $f,g,h$, $h(gf) = (hg)f$, and will simply be denoted $hgf$.
-		\item Between any two objects $x, y$ in a category $\cc$, there exists an object $\cc(x,y)$ consisting of all morphisms with domain $x$ and codomain $y$. This is usually called $Hom_{\cc}(x, y)$.
+		\item Between any two objects $\blue{x}, \red{y}$ in a category $\cc$, there exists an object $\cc(\red{x},\red{y})$ consisting of all morphisms with domain $\blue{x}$ and codomain $\red{y}$. This is usually called $Hom_{\cc}(\blue{x}, \red{y})$.
 	\end{itemize}
 }
 
 \frame
 {
 
-	Indeed, we are familiar with morphisms, identities, and composition already. In haskell, these translate into types \mred{a \to b}, the* identity function \mred{id}, and composition \mred{(.)}. 
+	Indeed, we are familiar with morphisms, identities, and composition already. In haskell, these translate into types \mred{a \to b}, the identity function \mred{id}, and composition \mred{(.)}. 
 	
 	In scala, these are roughly the same, modulo naming conventions - \mblue{A \Rightarrow B}, \mblue{identity}, \mblue{compose}.  
 }
@@ -620,12 +662,15 @@ Void & $\emptyset$ & 0 & ? \\ \hline
 }
 
 \begin{frame}[fragile]
+
 In Haskell, we represent this data as a typeclass
 
 	\begin{minted}{haskell}
-	class fmap :: (a -> b) -> f a -> f c
-	-- fmap id fa = fa 
-	-- fmap g . fmap f = fmap (g . f)
+	
+	class Functor f where
+	  fmap :: (a -> b) -> f a -> f b
+	  -- fmap id fa = fa 
+	  -- fmap g . fmap f = fmap (g . f)
 	\end{minted}
 	
 \end{frame}
@@ -637,10 +682,110 @@ In Haskell, we represent this data as a typeclass
 	 Operationally, this can be seen as "flipping the direction of arrows" in the target category. 
 }
 
+
 \frame
 {
-	This is often unnecessary data, as the saying a "$F$ is a contravariant functor from $\cc$ to $\dd$" is precisely saying one has a covariant functor $F : \opc \to \dd$. When it matters, I'll just tell you which one is opposite.
+	Example: what do we mean by cardinality?
+}
 
+\frame
+{
+	Recall that I mentioned this was an association of an isomorphism class of types with a finite set. 
+}
+
+\frame
+{
+	Enumeration defines a cardinality functor $|\cdot|: \cat{Fin_{Iso}} \to \cat{Set}$.  
+}
+
+\frame
+{
+	This is often unnecessary data, as the saying a "$F$ is a contravariant functor from $\cc$ to $\dd$" is saying exactly that one has a covariant functor $F : \opc \to \dd$. When it matters, I'll just tell you which one that is.
+
+}
+
+\frame
+{
+	As an important example, for any object $c$ of $\cc$, we have the \textbf{covariant represented functor of $c$}, $\cc(c, -)$, which is a functor $\cc \to \cat{Set}$.
+	
+}
+
+\frame
+{
+
+ LIkewise, we have the \textbf{contravariant functor represented by $c$}: $\cc(-, c) : \opc \to \cat{Set}$.
+
+}
+
+\frame
+{
+	We know these well! They're our old friends \textbf{Reader} and \textbf{Coreader}.
+}
+
+\begin{frame}[fragile]
+
+	\begin{minted}{haskell}
+	newtype Reader t a = Reader (t -> a)
+	instance Functor (Reader t) where
+	  -- fmap :: (a -> b) -> Reader t a -> Reader t b
+	  fmap f (Reader t) = Reader (f . t)
+	  
+	newtype Coreader t a = Coreader (a -> t)
+	instance Contravariant (Coreader t) where
+	  contramap f (Coreader k) = Coreader (k . f)
+	\end{minted}
+\end{frame}
+
+\frame
+{
+	To each functor $F : \cc \to \dd$ is associated data - a family of maps from each object $c$ of $\cc$ to objects $Fc$ of $\dd$ and likewise between morphisms. But this begs the question - how can we translate the data of one functor into the data of another?  
+}
+
+\frame
+{
+	For one, this entails we have two functors $F, G : \cc \to \dd$ with the same domain and codomain. Second, we need additional data such that to each $c$ of $\cc$ and $Fc$ of $\dd$, we can translate $Fc$ to $Gc$ in a natural way. 
+}
+
+
+\begin{frame}[fragile]
+
+	\begin{definition}[Natural Transformation]
+		Let $F,G : \cc \to \dd$ be functors. A \textbf{natural transformation} $\alpha$ consists of the following data: to each $c$ of $\cc$, a \textbf{component} map $\alpha_c : Fc \Rightarrow Gc$ such that the following square commutes for any $f : c \to d$ of $\cc$: 
+		
+		\begin{center}
+			\begin{tikzcd}
+			Fc \ar[r, "\alpha_c"] \ar[d, "Ff", swap] & Gc \ar[d, "Gf"]
+			\\ Fd \ar[r, "\alpha_d", swap] & Gd
+			\end{tikzcd}
+		\end{center}
+	\end{definition}
+\end{frame}
+
+\frame
+{
+	I.e., $\alpha_d \cdot Ff = Gf \cdot \alpha_c$.
+}
+
+\begin{frame}[fragile]
+
+	In haskell, this is rather simple to implement: 
+	
+	\begin{minted}{haskell}
+	type f ~> g = forall a. f a -> g a
+	-- given f : a -> b, natural transf. t,
+	-- t . fmap f = fmap f . t 
+	\end{minted}
+\end{frame}
+
+\frame
+{
+	A \textbf{natural isomorphism} is a natural transformation where each component map is an isomorphism. We will denote this $\alpha : F \cong G$. 
+	
+}
+
+\frame
+{
+	One form of category that we will look at later is that of a \textbf{functor category}, denoted $[\cc, \dd]$, whose objects are functors $\cc \to \dd$, and whose morphisms are natural transformations between these functors. 
 }
 
 \subsection{Initial and Terminal Objects}
@@ -652,7 +797,7 @@ In Haskell, we represent this data as a typeclass
 
 \frame
 {
-	\begin{definition}{Terminal and Initial objects}
+	\begin{definition}[Terminal and Initial objects]
 		An object $c$ of $\cc$ is called \textbf{terminal} if there is exactly 1 unique morphism from any other object in $\cc$ to $c$. 
 		
 		Dually,  an object $c$ of $\cc$ is \textbf{initial} if there is exactly 1 unique morphism to any other object in $\cc$. 
@@ -661,12 +806,12 @@ In Haskell, we represent this data as a typeclass
 
 \frame
 {
-	We have seen two such objects that act like terminal and initial objects already: \mred{()} and \mblue{\bot}
+	We have seen two such objects that act like terminal and initial objects already: \mred{()} and \mblue{Void}
 }
 
 \frame
 {
-	Indeed for every type $a$, the types \mred{a \to ()} and \mblue{\bot \to a} has precisely one inhabitant . 
+	Indeed for every type $a$, the types \mred{a \to ()} and \mblue{Void \to a} has precisely one inhabitant . 
 }
 
 \begin{frame}[fragile]
@@ -757,8 +902,458 @@ Namely, we have the following functions:
 	\end{minted}
 \end{frame}
 
-\
+\subsection{Universal Properties}
+\frame
+{
+	The diagrams for products and coproducts define their \textbf{universal properties}. In an imprecise sense, this means that these constructions are initial themselves in the appropriate category. 
+}
+
+\frame
+{
+	Let's now consider morphisms to and from products and coproducts, beginning with products first. 
+}
+
+\frame
+{
+	Consider $f \in \cc(\red{a \times b}, \blue{c})$. What data is necessary to produce \mblue{c}? 
+}
+
+\frame
+{
+	$f$ specifies an element $f \red{(a,b)}$ of $\cc$. Therefore, we require that $f$ have the additional data that when partially applied to \mred{b}, $f \red{(-,b)}$ specifies a function $\phi : \red{a} \to \blue{c}$. 
+}
+
+\frame
+{
+	Thus, to specify a function $\cc(\red{a \times b}, \blue{c})$ is to specify an equivalent function $\cc(\red{b}, \blue{c}^{\red{a}})$ - hence, an isomorphism. 
+}
+
+\begin{frame}[fragile]
+
+	We are familiar with this function! 
+	
+	\begin{minted}{haskell}
+	curry :: ((a,b) -> c) -> a -> b -> c
+	curry k a b = k (a,b)
+	
+	uncurry :: (a -> b -> c) -> (a,b) -> c
+	uncurry k (a,b) = k a b  
+	\end{minted}
+\end{frame}
+
+\frame
+{
+	The same deduction can be applied to coproducts. What data can we glean from $f \in \cc(\blue{a + b}, \red{c})$? 
+}
+
+\frame
+{
+	When \mblue{a + b} is introduced, we have either the left or the right hand side.
+	
+	Therefore, the data equivalent to $f$ consists of a pair of function $\blue{a} \to \red{c}$ and $\blue{b} \to \red{c}$ - one for each side. 
+}
+
+\frame
+{
+	In symbols, $\cc(\blue{a + b}, \red{c}) \cong \cc(\blue{a}, \red{c}) \times \cc(\blue{b}, \red{c})$
+}
+
+\begin{frame}[fragile]
+	\begin{minted}{haskell}
+	either 
+	  :: Either a b -> (a -> c) -> (b -> c) -> c
+	either (Left a) f _ = f a
+	either (Right b) _ g = g b
+	
+	pair :: (a -> c, b -> c) -> Either a b -> c
+	pair (f,g) (Left a) = f a
+	pair (f,g) (Right b) = g b
+	\end{minted}
+\end{frame}
+
+\frame
+{
+	Similarly, how would you deduce that $(\red{a \times b})^{\blue{c}} \cong \red{a}^{\blue{c}} \times \red{b}^{\blue{c}}$?
+}
+
+\section{The Yoneda Perspective}
+
+
+\begin{frame}
+	We've filled in the rest of our table! 	
+	
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|}
+		\hline
+		Types & Sets & \# of Inhabitants & Categories \\
+		\hline
+			a       & $A$ & $|A|$  & objects of $\cc$ \\
+			(a, b) & $A \times B$ & $|A| \times |B|$ & $c \times d$ \\
+			Either a b & $A \sqcup B$ & $|A| + |B|$ & $c + d$ \\
+			$a \to b$ &  set functions & $|B|^{|A|}$ & morphisms in $\cc$ \\
+			() & $\{*\}$ & 1 & terminal objects \\
+			Void & $\emptyset$ & 0 & initial objects \\ \hline
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+\frame
+{
+	Let's start from code and build some intuition, seeing if we can derive a category theoretic Leibniz perspective. 
+}
+
+\frame
+{
+	What would such a perspective look like? 
+}
+
+\frame
+{
+	To remind everyone, Leibniz' rule is $ \red{a} = \blue{b} \Leftrightarrow \forall P. P \red{a} = P \blue{b}$. 
+}
+
+\frame
+{
+	Propositions, as we have seen, correspond with morphisms to or from an object in a category. 
+	
+	Likewise, equality (in this context) is represented as an isomorphism. 
+}
+
+\frame
+{
+	\textbf{Candidate}: $\red{a} \cong \blue{b} \Leftrightarrow \forall x. \cc(\red{a}, x) \cong \cc(\blue{b}, x)$
+}
+
+
+\frame
+{
+	This is a provable statement. 
+}
+
+\frame
+{
+	\begin{definition}[Yoneda Embedding (corollary)]
+		\mred{a} is isomorphic to \mblue{b} if and only if $\cc(\red{a}, -)$ is naturally isomorphic to  $\cc(\blue{b}, -)$
+	\end{definition}
+	
+}
+
+\begin{frame}[fragile]
+
+	\begin{proof}[Proof of $(\Leftarrow)$]
+		Suppose $\cc(x, \red{a}) \cong \cc(x, \blue{b})$ for all objects x. Taking x to be \red{a} and \blue{b} successively, then, we have bijections: 
+		\[
+		\begin{aligned}
+			\begin{tikzcd}[
+  ar symbol/.style = {draw=none,"\textstyle#1" description,sloped},
+  isomorphic/.style = {ar symbol={\cong}},
+  ]
+				\cc(\red{a}, \red{a}) \ar[r, isomorphic] & \cc(\blue{b}, \red{a}) 
+			\end{tikzcd}
+			\qquad
+			\begin{tikzcd}[
+  ar symbol/.style = {draw=none,"\textstyle#1" description,sloped},
+  isomorphic/.style = {ar symbol={\cong}},
+  ]
+				\cc(\red{a}, \blue{b}) \ar[r, isomorphic] & \cc(\blue{b}, \blue{b})
+			\end{tikzcd}
+		\end{aligned}
+		\]
+		
+	\end{proof}
+\end{frame}
+
+\begin{frame}[fragile]
+
+	\begin{proof}[Proof of $(\Leftarrow)$]
+		Suppose $\cc(x, \red{a}) \cong \cc(x, \blue{b})$ for all objects x. Taking x to be \red{a} and \blue{b} successively, then, we have bijections: 
+		\[
+		\begin{aligned}
+			\begin{tikzcd}[
+  ar symbol/.style = {draw=none,"\textstyle#1" description,sloped},
+  isomorphic/.style = {ar symbol={\cong}},
+  inhabits/.style = {ar symbol={\in}}
+  ]
+				\cc(\red{a}, \red{a}) \ar[r, isomorphic] & \cc(\blue{b}, \red{a}) 
+				\\ 1_{\red{a}}  \ar[u, inhabits]
+			\end{tikzcd}
+			\qquad
+			\begin{tikzcd}[
+  ar symbol/.style = {draw=none,"\textstyle#1" description,sloped},
+  isomorphic/.style = {ar symbol={\cong}},
+    inhabits/.style = {ar symbol={\in}}
+  ]
+				\cc(\red{a}, \blue{b}) \ar[r, isomorphic] & \cc(\blue{b}, \blue{b})
+				\\ & 1_{\blue{b}} \ar[u, inhabits]
+			\end{tikzcd}
+		\end{aligned}
+		\]
+		
+	\end{proof}
+\end{frame}
+
+\begin{frame}[fragile]
+
+	\begin{proof}[Proof of $(\Leftarrow)$]
+		Suppose $\cc(x, \red{a}) \cong \cc(x, \blue{b})$ for all objects x. Taking x to be \red{a} and \blue{b} successively, then, we use bijections: 
+		\[
+		\begin{aligned}
+			\begin{tikzcd}[
+  ar symbol/.style = {draw=none,"\textstyle#1" description,sloped},
+  isomorphic/.style = {ar symbol={\cong}},
+  inhabits/.style = {ar symbol={\in}}
+  ]
+				\cc(\red{a}, \red{a}) \ar[r, isomorphic] & \cc(\blue{b}, \red{a}) 
+				\\ 1_{\red{a}}  \ar[u, inhabits] \ar[r] & \psi \ar[u, inhabits]
+			\end{tikzcd}
+			\qquad
+			\begin{tikzcd}[
+  ar symbol/.style = {draw=none,"\textstyle#1" description,sloped},
+  isomorphic/.style = {ar symbol={\cong}},
+    inhabits/.style = {ar symbol={\in}}
+  ]
+				\cc(\red{a}, \blue{b}) \ar[r, isomorphic] & \cc(\blue{b}, \blue{b})
+				\\  \phi \ar[u, inhabits] & 1_{\blue{b}} \ar[u, inhabits]  \ar[l]
+			\end{tikzcd}
+		\end{aligned}
+		\]
+		
+	To define functions $\phi$ and $\psi$. In fact, these functions are inverses!
+	\end{proof}
+\end{frame}
+
+
+\frame
+{
+	\begin{proof}[Proof of $(\Rightarrow)$]
+		Functors preserve isomorphisms (this is a simple check).
+	\end{proof}
+}
+
+\subsection{Representable Functors}
+
+\frame
+{
+	In previous slides we mentioned a functor "represented" by an object.
+}
+
+\frame
+{
+	What does this mean? 
+}
+
+
+\frame
+{
+	Indeed, we have a notion of a functor which relates an object to perspectives of that object i.e. morphisms to or from the object to all others. 
+}
+
+\frame
+{
+	"Objects exist in relation to all other objects" 
+}
+
+\frame
+{
+	"Everything in category theory can be proven with a combination of the Yoneda Lemma and some facts about the category of Sets" 
+}
+
+\frame
+{
+	This is the Yoneda perspective. Two objects are isomorphic if and only if the functors represented by them are naturally isomorphic.	
+}
+
+\frame
+{
+	\begin{definition}[Representable Functor]
+		A \textbf{representable} functor is a functor $F : \cc \to \cat{Set}$ along with the following data: 
+		
+		\begin{itemize}
+			\item an object \mblue{c} that is said to \textbf{represent} $F$
+			\item a natural isomorphism $\Phi : F \cong \cc(c, -)$
+		\end{itemize}
+		
+		This data together is called a \textbf{representation} of $F$. 
+	\end{definition}
+}
+
+\begin{frame}[fragile]
+
+	\begin{minted}{haskell}
+	class Representable f c | f -> c where
+	  tabulate :: f x -> (c -> x)
+	  index :: (c -> x) -> f x
+	\end{minted}
+\end{frame}
+
+\frame
+{
+	\begin{definition}[Representable Yoneda]
+		Let $F : \cc \to \cat{Set}$ be a functor where $\cc$ is a locally small category (every collection of morphisms $\cc(c, d)$ between any two objects forms a set). Then, $F\blue{c} \cong [\cc, \cat{Set}](\cc(\blue{c}, -), F)$. This bijection associates a natural transformation $\alpha : \cc(\blue{c}, -) \Rightarrow F$ with the element $\alpha_{\blue{c}}(1_{\blue{c}})$ in $F\blue{c}$. 
+	\end{definition}
+}
+
+\frame
+{
+	Furthermore, this correspondence is natural in \blue{c} and in $F$.
+}
+
+
+\frame
+{
+	Now, we won't prove this lemma here (it's a bit long for a short talk like this), but we can use this fact to show the operational intuition behind many statements. 
+}
+
+\begin{frame}
+\begin{block}{Different Yoneda lemmas}
+\begin{tabular}{rc}
+Covariant functor:     & $(\forall x. (a \to x) \to f~x) \cong f~a$. \\
+Contravariant functor: & $(\forall x. (x \to a) \to f~x) \cong f~a$.
+\end{tabular}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]
+Expressed in Haskell these look like this:
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+covariant :: Functor f =>
+             Iso (forall x. (a -> x) -> f x) (f a)
+covariant = Iso (\f -> f identity)
+                (\fa -> \f -> fmap f fa)
+contravariant :: Contravariant f =>
+                 Iso (forall x. (x -> a) -> f x) (f a)
+contravariant = Iso (\f -> f identity)
+                    (\fa -> \f -> contramap f fa)
+\end{minted}
+\end{frame}
+
+\begin{frame}[fragile]
+	\begin{minted}{haskell}
+	to :: (forall x. (a -> x) -> f x) -> f a
+	to f = f id
+	
+	from :: f a -> (forall x. (a -> x) -> f x)
+	from fa = \f -> fmap f fa
+	\end{minted}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+fromTo :: Functor f => (forall x. (a -> x) -> f x) ->
+                       (forall x. (a -> x) -> f x)
+fromTo = from . to
+fromTo = (\fa -> \g -> fmap g fa) .
+         (\f -> f id)
+fromTo = \f -> \g -> fmap g (f id)
+-- Using parametricity
+fromTo = \f -> \g -> f (g . id)
+-- Function composition
+fromTo = \f -> \g -> f g
+-- Eta reduction
+fromTo = \f -> f
+fromTo = id
+\end{minted}
+\end{frame}
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+toFrom :: Functor f => f a -> f a
+toFrom = to . from
+toFrom = (\f -> f id) . (\fa -> \g -> fmap g fa)
+toFrom = \fa -> (\g -> fmap g fa) id
+toFrom = \fa -> fa
+toFrom = id
+\end{minted}
+\end{frame}
+
 \section{Bringing it all back home}
 
+
+\frame
+{
+	How many inhabitants does \mred{\forall a. a \to a} have? 
+}
+
+\begin{frame}[fragile]
+
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a. a -> a
+  |$\cong$| |$\forall$| a. (() -> a) -> a
+  -- newtype Id a = a
+  |$\cong$| |$\forall$| a. (() -> a) -> Id a
+  |$\cong$| Id ()
+  |$\cong$| ()
+\end{minted}
+Since () has only one inhabitant, we conclude that $\forall a. a \to a$ has only one inhabitant as well.
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a x. (a, x) -> a
+    -- uncurrying
+    |$\cong$| |$\forall$| a x. x -> a -> a
+    -- () -> x $\cong$ x
+    |$\cong$| |$\forall$| a x. (() -> x) -> a -> a
+    -- Yoneda with newtype F a x = a -> a
+    |$\cong$| |$\forall$| a. F a ()
+    |$\cong$| |$\forall$| a. a -> a
+    -- reusing the proof above
+    |$\cong$| ()
+\end{minted}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a. (a, a) -> a
+    -- (a, a) $\cong$ Bool -> a
+    |$\cong$| |$\forall$| a. (Bool -> a) -> a
+    -- Yoneda with newtype F x = x
+    |$\cong$| Bool
+\end{minted}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a b c. (a -> c) -> b -> a -> c
+    -- newtype F a b x = b -> a -> x
+    |$\cong$| |$\forall$| a b. F a b a
+    |$\cong$| |$\forall$| a b. b -> a -> a
+    -- reusing one of the above theorems
+    |$\cong$| ()
+\end{minted}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a b c. (a -> b) -> (b -> c) -> (a -> c)
+    -- reorder the arguments
+    |$\cong$| |$\forall$| a b c. (b -> c) -> (a -> b) -> a -> c
+    -- Yoneda with newtype F a b x = (a -> b) -> a -> x
+    |$\cong$| |$\forall$| a b. F a b b
+    |$\cong$| |$\forall$| a b. (a -> b) -> a -> b
+    -- Yoneda with newtype G a x = a -> x
+    |$\cong$| |$\forall$| a. G a a
+    |$\cong$| |$\forall$| a. a -> a
+    -- reusing the above theorems
+    |$\cong$| ()
+\end{minted}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a. (a -> 0, a -> 0) -> (a -> 0)
+    |$\cong$| |$\forall$| a. a -> (a -> 0, a -> 0) -> 0
+    |$\cong$| |$\forall$| a. (1 -> a) -> (a -> 0, a -> 0) -> 0
+    |$\cong$| (1 -> 0, 1 -> 0) -> 0
+    |$\cong$| (0, 0) -> 0
+    |$\cong$| 0 -> 0
+    |$\cong$| 1
+\end{minted}
+\end{frame}
+
+\frame
+{
+	For more exercises, see a joint talk I did with @alexknvl on Isomorphic reasoning, which is the 6 hour version of this talk (slides at cohomolo.gy). 
+}
 
 \end{document}

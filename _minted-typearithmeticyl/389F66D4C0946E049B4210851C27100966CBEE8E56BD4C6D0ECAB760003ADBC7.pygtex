@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{k+kr}{type} \PYG{n}{f} \PYG{o}{\PYGZti{}\PYGZgt{}} \PYG{n}{g} \PYG{o+ow}{=} \PYG{n}{forall} \PYG{n}{a}\PYG{o}{.} \PYG{n}{f} \PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{g} \PYG{n}{a}
+	\PYG{c+c1}{\PYGZhy{}\PYGZhy{} given f : a \PYGZhy{}\PYGZgt{} b, natural transf. t,}
+	\PYG{c+c1}{\PYGZhy{}\PYGZhy{} t . fmap f = fmap f . t}
+\end{Verbatim}

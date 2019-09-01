@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.23)  29 AUG 2019 02:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.23)  1 SEP 2019 13:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1244,7 +1244,11 @@ Package: xfrac 2019-05-03 L3 Experimental split-level fractions
 Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
 (xtemplate)             line 79.
 
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/bbold/bbold.sty
+Package: bbold 1994/04/06 Bbold symbol package
+LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks49
 \inpenc@posthook=\toks50
@@ -1280,27 +1284,27 @@ runsystem(rm typearithmeticyl.aex)...executed.
 (./typearithmeticyl.aux)
 \openout1 = `typearithmeticyl.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 75.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    ... okay on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1368,7 +1372,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box90
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 75.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1378,68 +1382,68 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count363
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
 
 (./typearithmeticyl.out) (./typearithmeticyl.out)
 \@outlinefile=\write7
 \openout7 = `typearithmeticyl.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 70.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 70.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 75.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 70.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 7
-0.
+5.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 
-70.
+75.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 70.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 70.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 70.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 70.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 70.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 70.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 70.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 70.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 75.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 70.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 70.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 70.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 75.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 70.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 70.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 70.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 70.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 70.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 75.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 70.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 70.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 75.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 75.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 7
-0.
+5.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-70.
+75.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 70.
+ut line 75.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -1475,17 +1479,17 @@ x/updmap/pdftex.map}
 [4
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 96.
+LaTeX Font Info:    Try loading font information for U+msa on input line 103.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 96.
+LaTeX Font Info:    Try loading font information for U+msb on input line 103.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 96.
+line 103.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
@@ -1495,10 +1499,10 @@ thkerncmss.
 ] [6
 
 ]
-<kadena.png, id=155, 200.75pt x 200.75pt>
+<kadena.png, id=169, 200.75pt x 200.75pt>
 File: kadena.png Graphic file (type png)
 <use kadena.png>
-Package pdftex.def Info: kadena.png  used on input line 112.
+Package pdftex.def Info: kadena.png  used on input line 119.
 (pdftex.def)             Requested size: 60.22545pt x 60.22545pt.
  [7
 
@@ -1525,15 +1529,24 @@ Package pdftex.def Info: kadena.png  used on input line 112.
 
 ] [18
 
-] [19
+]
+LaTeX Font Info:    Try loading font information for U+bbold on input line 192.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/bbold/Ubbold.fd) [19
 
 ] [20
 
-] [21
+]
+[21
 
 ] [22
 
 ] [23
+
+] [24
+
+] [25
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1544,15 +1557,17 @@ Package pdftex.def Info: kadena.png  used on input line 112.
 
 (./_minted-typearithmeticyl/default-pyg-prefix.pygstyle)
 (./_minted-typearithmeticyl/default.pygstyle)
-(./_minted-typearithmeticyl/F3A6EF4AAF28A0BB330EC8BB7138DB8F66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex
+(./_minted-typearithmeticyl/8DC2E1E70FA98CA8C48CF0FC9211C9A6AFB7CE349F953BB0EF4
+26D336730F129.pygtex
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 4.
-)) [24
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 5.
+)) [26
 
-] [25
+] [27
 
-] [26
+] [28
+
+] [29
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1561,14 +1576,14 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 \openout5 = `typearithmeticyl.pyg'.
 
 
-(./_minted-typearithmeticyl/E6E4D4699178D127C429197BFDE9F10E66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [27
+(./_minted-typearithmeticyl/62B8CDFB92D8B57760112938587F740CAFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [30
 
-] [28
+] [31
 
-] [29
+] [32
 
-] [30
+] [33
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1578,7 +1593,7 @@ AB760003ADBC7.pygtex)) [27
 
 
 (./_minted-typearithmeticyl/28B65E6214C518C78BF171A225A692FB66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [31
+AB760003ADBC7.pygtex)) [34
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1588,40 +1603,42 @@ AB760003ADBC7.pygtex)) [31
 
 
 (./_minted-typearithmeticyl/73B3421DE487ECBF5935518E5C7CEBDF66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [32
+AB760003ADBC7.pygtex)) [35
 
-] [33
+] [36
+
+] [37
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 303.
+(hyperref)                removing `math shift' on input line 345.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\top' on input line 303.
+(hyperref)                removing `\top' on input line 345.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 303.
+(hyperref)                removing `math shift' on input line 345.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 303.
+(hyperref)                removing `math shift' on input line 345.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\bot' on input line 303.
+(hyperref)                removing `\bot' on input line 345.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 303.
+(hyperref)                removing `math shift' on input line 345.
 
-[34
+[38
 
-] [35
+] [39
 
-] [36
+] [40
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1630,16 +1647,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \openout5 = `typearithmeticyl.pyg'.
 
 
-(./_minted-typearithmeticyl/04F01F946CCD4F0707659D8C3AFE7277AFB7CE349F953BB0EF4
-26D336730F129.pygtex)) [37
-
-] [38
-
-] [39
-
-] [40
-
-] [41
+(./_minted-typearithmeticyl/39A8A49A5E1B5A19DA340BC195F39B8CAFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [41
 
 ] [42
 
@@ -1648,6 +1657,14 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 ] [44
 
 ] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1658,45 +1675,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 (./_minted-typearithmeticyl/CFD87166E5C05ECC21FFAFB6B8813A8266CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [46
+AB760003ADBC7.pygtex)) [50
 
-] [47
+] [51
 
-] [48
+] [52
 
-] [49
-
-] [50
-
-]
-\openout4 = `typearithmeticyl.vrb'.
-
- (./typearithmeticyl.vrb
-\openout5 = `typearithmeticyl.pyg'.
-
-
-(./_minted-typearithmeticyl/8B032F85BCEBD1680193D49604E068DE66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [51
-
-]
-\openout4 = `typearithmeticyl.vrb'.
-
- (./typearithmeticyl.vrb
-\openout5 = `typearithmeticyl.pyg'.
-
-
-(./_minted-typearithmeticyl/9D3B323907031E53777E24C9A7DDBD9666CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [52
-
-]
-\openout4 = `typearithmeticyl.vrb'.
-
- (./typearithmeticyl.vrb
-\openout5 = `typearithmeticyl.pyg'.
-
-
-(./_minted-typearithmeticyl/D26A6C437AC547E38EF121EFA300A67166CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [53
+] [53
 
 ] [54
 
@@ -1707,16 +1692,40 @@ AB760003ADBC7.pygtex)) [53
 \openout5 = `typearithmeticyl.pyg'.
 
 
-(./_minted-typearithmeticyl/CACC0BB1A75B9195CAEDA8D325EA70C3AFB7CE349F953BB0EF4
-26D336730F129.pygtex)) [55
+(./_minted-typearithmeticyl/8B032F85BCEBD1680193D49604E068DE66CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [55
 
-] [56
+]
+\openout4 = `typearithmeticyl.vrb'.
 
-] [57
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/9D3B323907031E53777E24C9A7DDBD9666CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [56
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/D26A6C437AC547E38EF121EFA300A67166CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [57
 
 ] [58
 
-] [59
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/17BE5D5902F20352C4C6FCAF7F81F976AFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [59
 
 ] [60
 
@@ -1728,8 +1737,7 @@ AB760003ADBC7.pygtex)) [53
 
 ] [64
 
-]
-[65
+] [65
 
 ] [66
 
@@ -1738,14 +1746,7 @@ AB760003ADBC7.pygtex)) [53
 ] [68
 
 ]
-\openout4 = `typearithmeticyl.vrb'.
-
- (./typearithmeticyl.vrb
-\openout5 = `typearithmeticyl.pyg'.
-
-
-(./_minted-typearithmeticyl/84556B468EE14CFB34080C44D599D19666CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [69
+[69
 
 ] [70
 
@@ -1753,11 +1754,76 @@ AB760003ADBC7.pygtex)) [69
 
 ] [72
 
-] [73
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/CFC73DC7D5DC807639DCA1D705A80BCB66CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [73
 
 ] [74
 
 ] [75
+
+] [76
+
+] [77
+
+] [78
+
+] [79
+
+] [80
+
+] [81
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+
+(./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/74454F5AB55A9F28E5E80679214E6DF266CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [82
+
+] [83
+
+] [84
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb) [85
+
+] [86
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+
+(./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/389F66D4C0946E049B4210851C27100966CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [87
+
+] [88
+
+] [89
+
+] [90
+
+] [91
+
+] [92
+
+] [93
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1768,16 +1834,16 @@ AB760003ADBC7.pygtex)) [69
 
 
 (./_minted-typearithmeticyl/1EADEA96EB2ECE4B24F88F8B9529B7A5AFB7CE349F953BB0EF4
-26D336730F129.pygtex)) [76
+26D336730F129.pygtex)) [94
 
-] [77
+] [95
 
-] [78
+] [96
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
 
- (./typearithmeticyl.vrb) [79
+ (./typearithmeticyl.vrb) [97
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1788,14 +1854,14 @@ AB760003ADBC7.pygtex)) [69
 
 
 (./_minted-typearithmeticyl/862B33B450093D6B9EB3DD77282FFC2966CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [80
+AB760003ADBC7.pygtex)) [98
 
-] [81
+] [99
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
 
- (./typearithmeticyl.vrb) [82
+ (./typearithmeticyl.vrb) [100
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1806,9 +1872,222 @@ AB760003ADBC7.pygtex)) [80
 
 
 (./_minted-typearithmeticyl/8952231CA4B5C2F2EFF7B7E81724BCC666CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [83
+AB760003ADBC7.pygtex)) [101
 
-] [84
+] [102
+
+] [103
+
+] [104
+
+] [105
+
+] [106
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+
+(./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/5D56DD07FF3BCF83E619E5524CCC5DBD66CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [107
+
+] [108
+
+] [109
+
+] [110
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/06CDC9D5F607B4E8F5B760F61F4B4E5966CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [111
+
+] [112
+
+] [113
+
+] [114
+
+] [115
+
+] [116
+
+] [117
+
+] [118
+
+] [119
+
+]
+[120
+
+] [121
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb) [122
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb) [123
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+
+(./typearithmeticyl.vrb) [124
+
+] [125
+
+] [126
+
+] [127
+
+] [128
+
+] [129
+
+] [130
+
+] [131
+
+]
+[132
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/211C4928D341F9B04FF839E171A1DB6166CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [133
+
+] [134
+
+] [135
+
+] [136
+
+] [137
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/70684EB5FB4A5033AB56062BE66095A6AFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [138
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/1BB849D095978DD5547CDF0B18F4E64666CBEE8E56BD4C6D0EC
+AB760003ADBC7.pygtex)) [139
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/8406A5079903C8A5C0FE279F6C301767AFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [140
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/EF21292AA555EFC475B0ECA42A2ED68CAFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [141
+
+] [142
+
+] [143
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/507BDADED7DE3560D3CBB29563E2068BAFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [144
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/AC67A3268C75AB383DD259A3CA5B777EAFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [145
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/99903A606B2DE705A0D3060760636E99AFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [146
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/00AA633EBB080FB070BEB05BE1FEDAEDAFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [147
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/8C14C8567D57DBBE3667EAF74342F280AFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [148
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/856AD6D4DB2AE7966F7775BEDB5C2721AFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [149
+
+] [150
 
 ]
 \tf@nav=\write8
@@ -1820,43 +2099,44 @@ AB760003ADBC7.pygtex)) [83
 \tf@snm=\write10
 \openout10 = `typearithmeticyl.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1359.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1359.
  (./typearithmeticyl.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 764.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 764.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1359.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1359.
+
 Package rerunfilecheck Info: File `typearithmeticyl.out' has not changed.
-(rerunfilecheck)             Checksum: 1C6EE6F62B1B2924C274C717D53AECAC;1470.
+(rerunfilecheck)             Checksum: 9764D7354647AF7180EACD08502D1B9F;1662.
 runsystem(rm typearithmeticyl.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 35494 strings out of 492609
- 714984 string characters out of 6129048
- 810140 words of memory out of 5000000
- 38550 multiletter control sequences out of 15000+600000
- 546716 words of font info for 68 fonts, out of 8000000 for 9000
+ 36176 strings out of 492609
+ 731109 string characters out of 6129048
+ 828961 words of memory out of 5000000
+ 38999 multiletter control sequences out of 15000+600000
+ 549937 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,15n,84p,783b,1063s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loc
-al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfso1000.pfb>
-Output written on typearithmeticyl.pdf (84 pages, 200904 bytes).
+ 58i,28n,84p,783b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pf
+b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on typearithmeticyl.pdf (150 pages, 249169 bytes).
 PDF statistics:
- 665 PDF objects out of 1000 (max. 8388607)
- 552 compressed objects within 6 object streams
- 192 named destinations out of 1000 (max. 500000)
- 232 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1057 PDF objects out of 1200 (max. 8388607)
+ 874 compressed objects within 9 object streams
+ 327 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,9 +1,9 @@
-We are all familar with these: in Haskell and Scala, we have the type \blue{Either} \blue{a} \blue{b}. Its defined by having two operators:
-	
-	\begin{minted}{haskell}
-	inl :: a -> Either a b
-	inl = Left
-	
-	inr :: b -> Either a b
-	inr = Right
-	\end{minted}
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a. (a -> 0, a -> 0) -> (a -> 0)
+    |$\cong$| |$\forall$| a. a -> (a -> 0, a -> 0) -> 0
+    |$\cong$| |$\forall$| a. (1 -> a) -> (a -> 0, a -> 0) -> 0
+    |$\cong$| (1 -> 0, 1 -> 0) -> 0
+    |$\cong$| (0, 0) -> 0
+    |$\cong$| 0 -> 0
+    |$\cong$| 1
+\end{minted}

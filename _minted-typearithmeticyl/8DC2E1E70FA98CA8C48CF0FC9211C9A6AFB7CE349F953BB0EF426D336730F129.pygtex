@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+	
+	\PYG{esc}{\mred{\one}} \PYG{o}{+}  \PYG{esc}{\mred{\one}}
+	\PYG{o}{\PYGZti{}} \PYG{n+nb}{()} \PYG{o}{+} \PYG{n+nb}{()}
+	\PYG{o}{\PYGZti{}} \PYG{k+kt}{Either} \PYG{n+nb}{()} \PYG{n+nb}{()}
+	\PYG{c+c1}{\PYGZhy{}\PYGZhy{} [|Either () ()|]}
+	\PYG{o}{\PYGZti{}}  \PYG{esc}{\mred{\two}}
+\end{Verbatim}

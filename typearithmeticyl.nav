@@ -30,196 +30,335 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {2}{2}{4}{11/11}{Why are we here?}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{2}{5}{12/12}{Why are we here?}{0}}
+\headcommand {\beamer@subsectionpages {8}{11}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{12}{What and How?}}
+\headcommand {\slideentry {2}{3}{1}{12/12}{What and How?}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionpages {8}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{13}{What and How?}}
-\headcommand {\slideentry {2}{3}{1}{13/13}{What and How?}{0}}
+\headcommand {\slideentry {2}{3}{2}{13/13}{What and How?}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {2}{3}{2}{14/14}{What and How?}{0}}
+\headcommand {\slideentry {2}{3}{3}{14/14}{What and How?}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {2}{3}{3}{15/15}{What and How?}{0}}
+\headcommand {\slideentry {2}{3}{4}{15/15}{What and How?}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {2}{3}{4}{16/16}{What and How?}{0}}
+\headcommand {\slideentry {2}{3}{5}{16/16}{What and How?}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {2}{3}{5}{17/17}{What and How?}{0}}
+\headcommand {\beamer@sectionpages {3}{16}}
+\headcommand {\beamer@subsectionpages {12}{16}}
+\headcommand {\sectionentry {3}{Some Type Arithmetic}{17}{Some Type Arithmetic}{0}}
+\headcommand {\slideentry {3}{0}{1}{17/17}{}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@sectionpages {3}{17}}
-\headcommand {\beamer@subsectionpages {13}{17}}
-\headcommand {\sectionentry {3}{Some Type Arithmetic}{18}{Some Type Arithmetic}{0}}
-\headcommand {\slideentry {3}{0}{1}{18/18}{}{0}}
+\headcommand {\slideentry {3}{0}{2}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {3}{0}{2}{19/19}{}{0}}
+\headcommand {\beamer@subsectionpages {17}{18}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{19}{Ground Rules}}
+\headcommand {\slideentry {3}{1}{1}{19/19}{Ground Rules}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\beamer@subsectionpages {18}{19}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{20}{Ground Rules}}
-\headcommand {\slideentry {3}{1}{1}{20/20}{Ground Rules}{0}}
+\headcommand {\slideentry {3}{1}{2}{20/20}{Ground Rules}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {3}{1}{2}{21/21}{Ground Rules}{0}}
+\headcommand {\slideentry {3}{1}{3}{21/21}{Ground Rules}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\slideentry {3}{1}{3}{22/22}{Ground Rules}{0}}
+\headcommand {\slideentry {3}{1}{4}{22/22}{Ground Rules}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\beamer@subsectionpages {20}{22}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{23}{Addition}}
-\headcommand {\slideentry {3}{2}{1}{23/23}{Addition}{0}}
+\headcommand {\slideentry {3}{1}{5}{23/23}{Ground Rules}{0}}
 \headcommand {\beamer@framepages {23}{23}}
-\headcommand {\slideentry {3}{2}{2}{24/24}{Addition}{0}}
+\headcommand {\slideentry {3}{1}{6}{24/24}{Ground Rules}{0}}
 \headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {3}{2}{3}{25/25}{Addition}{0}}
+\headcommand {\beamer@subsectionpages {19}{24}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{25}{Addition}}
+\headcommand {\slideentry {3}{2}{1}{25/25}{Addition}{0}}
 \headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {3}{2}{4}{26/26}{Addition}{0}}
+\headcommand {\slideentry {3}{2}{2}{26/26}{Addition}{0}}
 \headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {3}{2}{5}{27/27}{Addition}{0}}
+\headcommand {\slideentry {3}{2}{3}{27/27}{Addition}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {3}{2}{6}{28/28}{Addition}{0}}
+\headcommand {\slideentry {3}{2}{4}{28/28}{Addition}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\beamer@subsectionpages {23}{28}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{29}{Multiplication}}
-\headcommand {\slideentry {3}{3}{1}{29/29}{Multiplication}{0}}
+\headcommand {\slideentry {3}{2}{5}{29/29}{Addition}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {3}{3}{2}{30/30}{Multiplication}{0}}
+\headcommand {\slideentry {3}{2}{6}{30/30}{Addition}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\beamer@subsectionpages {29}{30}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{31}{Exponentiation}}
-\headcommand {\slideentry {3}{4}{1}{31/31}{Exponentiation}{0}}
+\headcommand {\slideentry {3}{2}{7}{31/31}{Addition}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {3}{4}{2}{32/32}{Exponentiation}{0}}
+\headcommand {\beamer@subsectionpages {25}{31}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{32}{Multiplication}}
+\headcommand {\slideentry {3}{3}{1}{32/32}{Multiplication}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\slideentry {3}{4}{3}{33/33}{Exponentiation}{0}}
+\headcommand {\slideentry {3}{3}{2}{33/33}{Multiplication}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\beamer@subsectionpages {31}{33}}
-\headcommand {\beamer@subsectionentry {0}{3}{5}{34}{$\top $ and $\bot $}}
-\headcommand {\slideentry {3}{5}{1}{34/34}{$\top $ and $\bot $}{0}}
+\headcommand {\beamer@subsectionpages {32}{33}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{34}{Exponentiation}}
+\headcommand {\slideentry {3}{4}{1}{34/34}{Exponentiation}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\beamer@subsectionpages {34}{34}}
-\headcommand {\beamer@subsectionentry {0}{3}{6}{35}{A correspondence Pt. 1}}
-\headcommand {\slideentry {3}{6}{1}{35/35}{A correspondence Pt. 1}{0}}
+\headcommand {\slideentry {3}{4}{2}{35/35}{Exponentiation}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {3}{6}{2}{36/36}{A correspondence Pt. 1}{0}}
+\headcommand {\slideentry {3}{4}{3}{36/36}{Exponentiation}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {3}{6}{3}{37/37}{A correspondence Pt. 1}{0}}
+\headcommand {\slideentry {3}{4}{4}{37/37}{Exponentiation}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {3}{6}{4}{38/38}{A correspondence Pt. 1}{0}}
+\headcommand {\beamer@subsectionpages {34}{37}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{38}{$\top $ and $\bot $}}
+\headcommand {\slideentry {3}{5}{1}{38/38}{$\top $ and $\bot $}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {3}{6}{5}{39/39}{A correspondence Pt. 1}{0}}
+\headcommand {\beamer@subsectionpages {38}{38}}
+\headcommand {\beamer@subsectionentry {0}{3}{6}{39}{A correspondence Pt. 1}}
+\headcommand {\slideentry {3}{6}{1}{39/39}{A correspondence Pt. 1}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@sectionpages {18}{39}}
-\headcommand {\beamer@subsectionpages {35}{39}}
-\headcommand {\sectionentry {4}{The Leibniz Perspective}{40}{The Leibniz Perspective}{0}}
-\headcommand {\slideentry {4}{0}{1}{40/40}{}{0}}
+\headcommand {\slideentry {3}{6}{2}{40/40}{A correspondence Pt. 1}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@subsectionpages {40}{40}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{41}{When are things equal?}}
-\headcommand {\slideentry {4}{1}{1}{41/41}{When are things equal?}{0}}
+\headcommand {\slideentry {3}{6}{3}{41/41}{A correspondence Pt. 1}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {4}{1}{2}{42/42}{When are things equal?}{0}}
+\headcommand {\slideentry {3}{6}{4}{42/42}{A correspondence Pt. 1}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {4}{1}{3}{43/43}{When are things equal?}{0}}
+\headcommand {\slideentry {3}{6}{5}{43/43}{A correspondence Pt. 1}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {4}{1}{4}{44/44}{When are things equal?}{0}}
+\headcommand {\beamer@sectionpages {17}{43}}
+\headcommand {\beamer@subsectionpages {39}{43}}
+\headcommand {\sectionentry {4}{The Leibniz Perspective}{44}{The Leibniz Perspective}{0}}
+\headcommand {\slideentry {4}{0}{1}{44/44}{}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\beamer@subsectionpages {41}{44}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{45}{Isomorphisms}}
-\headcommand {\slideentry {4}{2}{1}{45/45}{Isomorphisms}{0}}
+\headcommand {\beamer@subsectionpages {44}{44}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{45}{When are things equal?}}
+\headcommand {\slideentry {4}{1}{1}{45/45}{When are things equal?}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {4}{2}{2}{46/46}{Isomorphisms}{0}}
+\headcommand {\slideentry {4}{1}{2}{46/46}{When are things equal?}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {4}{2}{3}{47/47}{Isomorphisms}{0}}
+\headcommand {\slideentry {4}{1}{3}{47/47}{When are things equal?}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\slideentry {4}{2}{4}{48/48}{Isomorphisms}{0}}
+\headcommand {\slideentry {4}{1}{4}{48/48}{When are things equal?}{0}}
 \headcommand {\beamer@framepages {48}{48}}
 \headcommand {\beamer@subsectionpages {45}{48}}
-\headcommand {\beamer@subsectionentry {0}{4}{3}{49}{Identity of Indiscernibles}}
-\headcommand {\slideentry {4}{3}{1}{49/49}{Identity of Indiscernibles}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{49}{Isomorphisms}}
+\headcommand {\slideentry {4}{2}{1}{49/49}{Isomorphisms}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {4}{3}{2}{50/50}{Identity of Indiscernibles}{0}}
+\headcommand {\slideentry {4}{2}{2}{50/50}{Isomorphisms}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\beamer@subsectionpages {49}{50}}
-\headcommand {\beamer@subsectionentry {0}{4}{4}{51}{Putting it to work}}
-\headcommand {\slideentry {4}{4}{1}{51/51}{Putting it to work}{0}}
+\headcommand {\slideentry {4}{2}{3}{51/51}{Isomorphisms}{0}}
 \headcommand {\beamer@framepages {51}{51}}
-\headcommand {\slideentry {4}{4}{2}{52/52}{Putting it to work}{0}}
+\headcommand {\slideentry {4}{2}{4}{52/52}{Isomorphisms}{0}}
 \headcommand {\beamer@framepages {52}{52}}
-\headcommand {\slideentry {4}{4}{3}{53/53}{Putting it to work}{0}}
+\headcommand {\beamer@subsectionpages {49}{52}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{53}{Identity of Indiscernibles}}
+\headcommand {\slideentry {4}{3}{1}{53/53}{Identity of Indiscernibles}{0}}
 \headcommand {\beamer@framepages {53}{53}}
-\headcommand {\slideentry {4}{4}{4}{54/54}{Putting it to work}{0}}
+\headcommand {\slideentry {4}{3}{2}{54/54}{Identity of Indiscernibles}{0}}
 \headcommand {\beamer@framepages {54}{54}}
-\headcommand {\slideentry {4}{4}{5}{55/55}{Putting it to work}{0}}
+\headcommand {\beamer@subsectionpages {53}{54}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{55}{Putting it to work}}
+\headcommand {\slideentry {4}{4}{1}{55/55}{Putting it to work}{0}}
 \headcommand {\beamer@framepages {55}{55}}
-\headcommand {\beamer@subsectionpages {51}{55}}
-\headcommand {\beamer@subsectionentry {0}{4}{5}{56}{The million dollar question}}
-\headcommand {\slideentry {4}{5}{1}{56/56}{The million dollar question}{0}}
+\headcommand {\slideentry {4}{4}{2}{56/56}{Putting it to work}{0}}
 \headcommand {\beamer@framepages {56}{56}}
-\headcommand {\slideentry {4}{5}{2}{57/57}{The million dollar question}{0}}
+\headcommand {\slideentry {4}{4}{3}{57/57}{Putting it to work}{0}}
 \headcommand {\beamer@framepages {57}{57}}
-\headcommand {\slideentry {4}{5}{3}{58/58}{The million dollar question}{0}}
+\headcommand {\slideentry {4}{4}{4}{58/58}{Putting it to work}{0}}
 \headcommand {\beamer@framepages {58}{58}}
-\headcommand {\slideentry {4}{5}{4}{59/59}{The million dollar question}{0}}
+\headcommand {\slideentry {4}{4}{5}{59/59}{Putting it to work}{0}}
 \headcommand {\beamer@framepages {59}{59}}
-\headcommand {\beamer@sectionpages {40}{59}}
-\headcommand {\beamer@subsectionpages {56}{59}}
-\headcommand {\sectionentry {5}{The Yoneda Perspective}{60}{The Yoneda Perspective}{0}}
-\headcommand {\slideentry {5}{0}{1}{60/60}{}{0}}
+\headcommand {\beamer@subsectionpages {55}{59}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{60}{The million dollar question}}
+\headcommand {\slideentry {4}{5}{1}{60/60}{The million dollar question}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\beamer@subsectionpages {60}{60}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{61}{Some Category Theory}}
-\headcommand {\slideentry {5}{1}{1}{61/61}{Some Category Theory}{0}}
+\headcommand {\slideentry {4}{5}{2}{61/61}{The million dollar question}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {5}{1}{2}{62/62}{Some Category Theory}{0}}
+\headcommand {\slideentry {4}{5}{3}{62/62}{The million dollar question}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\slideentry {5}{1}{3}{63/63}{Some Category Theory}{0}}
+\headcommand {\slideentry {4}{5}{4}{63/63}{The million dollar question}{0}}
 \headcommand {\beamer@framepages {63}{63}}
-\headcommand {\slideentry {5}{1}{4}{64/64}{Some Category Theory}{0}}
+\headcommand {\beamer@sectionpages {44}{63}}
+\headcommand {\beamer@subsectionpages {60}{63}}
+\headcommand {\sectionentry {5}{Some Category Theory}{64}{Some Category Theory}{0}}
+\headcommand {\slideentry {5}{0}{1}{64/64}{}{0}}
 \headcommand {\beamer@framepages {64}{64}}
-\headcommand {\slideentry {5}{1}{5}{65/65}{Some Category Theory}{0}}
+\headcommand {\beamer@subsectionpages {64}{64}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{65}{The Basics}}
+\headcommand {\slideentry {5}{1}{1}{65/65}{The Basics}{0}}
 \headcommand {\beamer@framepages {65}{65}}
-\headcommand {\slideentry {5}{1}{6}{66/66}{Some Category Theory}{0}}
+\headcommand {\slideentry {5}{1}{2}{66/66}{The Basics}{0}}
 \headcommand {\beamer@framepages {66}{66}}
-\headcommand {\slideentry {5}{1}{7}{67/67}{Some Category Theory}{0}}
+\headcommand {\slideentry {5}{1}{3}{67/67}{The Basics}{0}}
 \headcommand {\beamer@framepages {67}{67}}
-\headcommand {\slideentry {5}{1}{8}{68/68}{Some Category Theory}{0}}
+\headcommand {\slideentry {5}{1}{4}{68/68}{The Basics}{0}}
 \headcommand {\beamer@framepages {68}{68}}
-\headcommand {\slideentry {5}{1}{9}{69/69}{Some Category Theory}{0}}
+\headcommand {\slideentry {5}{1}{5}{69/69}{The Basics}{0}}
 \headcommand {\beamer@framepages {69}{69}}
-\headcommand {\slideentry {5}{1}{10}{70/70}{Some Category Theory}{0}}
+\headcommand {\slideentry {5}{1}{6}{70/70}{The Basics}{0}}
 \headcommand {\beamer@framepages {70}{70}}
-\headcommand {\slideentry {5}{1}{11}{71/71}{Some Category Theory}{0}}
+\headcommand {\slideentry {5}{1}{7}{71/71}{The Basics}{0}}
 \headcommand {\beamer@framepages {71}{71}}
-\headcommand {\beamer@subsectionpages {61}{71}}
-\headcommand {\beamer@subsectionentry {0}{5}{2}{72}{Initial and Terminal Objects}}
-\headcommand {\slideentry {5}{2}{1}{72/72}{Initial and Terminal Objects}{0}}
+\headcommand {\slideentry {5}{1}{8}{72/72}{The Basics}{0}}
 \headcommand {\beamer@framepages {72}{72}}
-\headcommand {\slideentry {5}{2}{2}{73/73}{Initial and Terminal Objects}{0}}
+\headcommand {\slideentry {5}{1}{9}{73/73}{The Basics}{0}}
 \headcommand {\beamer@framepages {73}{73}}
-\headcommand {\slideentry {5}{2}{3}{74/74}{Initial and Terminal Objects}{0}}
+\headcommand {\slideentry {5}{1}{10}{74/74}{The Basics}{0}}
 \headcommand {\beamer@framepages {74}{74}}
-\headcommand {\slideentry {5}{2}{4}{75/75}{Initial and Terminal Objects}{0}}
+\headcommand {\slideentry {5}{1}{11}{75/75}{The Basics}{0}}
 \headcommand {\beamer@framepages {75}{75}}
-\headcommand {\slideentry {5}{2}{5}{76/76}{Initial and Terminal Objects}{0}}
+\headcommand {\slideentry {5}{1}{12}{76/76}{The Basics}{0}}
 \headcommand {\beamer@framepages {76}{76}}
-\headcommand {\beamer@subsectionpages {72}{76}}
-\headcommand {\beamer@subsectionentry {0}{5}{3}{77}{Products and Coproducts}}
-\headcommand {\slideentry {5}{3}{1}{77/77}{Products and Coproducts}{0}}
+\headcommand {\slideentry {5}{1}{13}{77/77}{The Basics}{0}}
 \headcommand {\beamer@framepages {77}{77}}
-\headcommand {\slideentry {5}{3}{2}{78/78}{Products and Coproducts}{0}}
+\headcommand {\slideentry {5}{1}{14}{78/78}{The Basics}{0}}
 \headcommand {\beamer@framepages {78}{78}}
-\headcommand {\slideentry {5}{3}{3}{79/79}{Products and Coproducts}{0}}
+\headcommand {\slideentry {5}{1}{15}{79/79}{The Basics}{0}}
 \headcommand {\beamer@framepages {79}{79}}
-\headcommand {\slideentry {5}{3}{4}{80/80}{Products and Coproducts}{0}}
+\headcommand {\slideentry {5}{1}{16}{80/80}{The Basics}{0}}
 \headcommand {\beamer@framepages {80}{80}}
-\headcommand {\slideentry {5}{3}{5}{81/81}{Products and Coproducts}{0}}
+\headcommand {\slideentry {5}{1}{17}{81/81}{The Basics}{0}}
 \headcommand {\beamer@framepages {81}{81}}
-\headcommand {\slideentry {5}{3}{6}{82/82}{Products and Coproducts}{0}}
+\headcommand {\slideentry {5}{1}{18}{82/82}{The Basics}{0}}
 \headcommand {\beamer@framepages {82}{82}}
-\headcommand {\slideentry {5}{3}{7}{83/83}{Products and Coproducts}{0}}
+\headcommand {\slideentry {5}{1}{19}{83/83}{The Basics}{0}}
 \headcommand {\beamer@framepages {83}{83}}
-\headcommand {\beamer@sectionpages {60}{83}}
-\headcommand {\beamer@subsectionpages {77}{83}}
-\headcommand {\sectionentry {6}{Bringing it all back home}{84}{Bringing it all back home}{0}}
-\headcommand {\slideentry {6}{0}{1}{84/84}{}{0}}
+\headcommand {\slideentry {5}{1}{20}{84/84}{The Basics}{0}}
 \headcommand {\beamer@framepages {84}{84}}
-\headcommand {\beamer@partpages {1}{84}}
-\headcommand {\beamer@subsectionpages {84}{84}}
-\headcommand {\beamer@sectionpages {84}{84}}
-\headcommand {\beamer@documentpages {84}}
-\headcommand {\gdef \inserttotalframenumber {84}}
+\headcommand {\slideentry {5}{1}{21}{85/85}{The Basics}{0}}
+\headcommand {\beamer@framepages {85}{85}}
+\headcommand {\slideentry {5}{1}{22}{86/86}{The Basics}{0}}
+\headcommand {\beamer@framepages {86}{86}}
+\headcommand {\slideentry {5}{1}{23}{87/87}{The Basics}{0}}
+\headcommand {\beamer@framepages {87}{87}}
+\headcommand {\slideentry {5}{1}{24}{88/88}{The Basics}{0}}
+\headcommand {\beamer@framepages {88}{88}}
+\headcommand {\slideentry {5}{1}{25}{89/89}{The Basics}{0}}
+\headcommand {\beamer@framepages {89}{89}}
+\headcommand {\beamer@subsectionpages {65}{89}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{90}{Initial and Terminal Objects}}
+\headcommand {\slideentry {5}{2}{1}{90/90}{Initial and Terminal Objects}{0}}
+\headcommand {\beamer@framepages {90}{90}}
+\headcommand {\slideentry {5}{2}{2}{91/91}{Initial and Terminal Objects}{0}}
+\headcommand {\beamer@framepages {91}{91}}
+\headcommand {\slideentry {5}{2}{3}{92/92}{Initial and Terminal Objects}{0}}
+\headcommand {\beamer@framepages {92}{92}}
+\headcommand {\slideentry {5}{2}{4}{93/93}{Initial and Terminal Objects}{0}}
+\headcommand {\beamer@framepages {93}{93}}
+\headcommand {\slideentry {5}{2}{5}{94/94}{Initial and Terminal Objects}{0}}
+\headcommand {\beamer@framepages {94}{94}}
+\headcommand {\beamer@subsectionpages {90}{94}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{95}{Products and Coproducts}}
+\headcommand {\slideentry {5}{3}{1}{95/95}{Products and Coproducts}{0}}
+\headcommand {\beamer@framepages {95}{95}}
+\headcommand {\slideentry {5}{3}{2}{96/96}{Products and Coproducts}{0}}
+\headcommand {\beamer@framepages {96}{96}}
+\headcommand {\slideentry {5}{3}{3}{97/97}{Products and Coproducts}{0}}
+\headcommand {\beamer@framepages {97}{97}}
+\headcommand {\slideentry {5}{3}{4}{98/98}{Products and Coproducts}{0}}
+\headcommand {\beamer@framepages {98}{98}}
+\headcommand {\slideentry {5}{3}{5}{99/99}{Products and Coproducts}{0}}
+\headcommand {\beamer@framepages {99}{99}}
+\headcommand {\slideentry {5}{3}{6}{100/100}{Products and Coproducts}{0}}
+\headcommand {\beamer@framepages {100}{100}}
+\headcommand {\slideentry {5}{3}{7}{101/101}{Products and Coproducts}{0}}
+\headcommand {\beamer@framepages {101}{101}}
+\headcommand {\beamer@subsectionpages {95}{101}}
+\headcommand {\beamer@subsectionentry {0}{5}{4}{102}{Universal Properties}}
+\headcommand {\slideentry {5}{4}{1}{102/102}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {102}{102}}
+\headcommand {\slideentry {5}{4}{2}{103/103}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {103}{103}}
+\headcommand {\slideentry {5}{4}{3}{104/104}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {104}{104}}
+\headcommand {\slideentry {5}{4}{4}{105/105}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {105}{105}}
+\headcommand {\slideentry {5}{4}{5}{106/106}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {106}{106}}
+\headcommand {\slideentry {5}{4}{6}{107/107}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {107}{107}}
+\headcommand {\slideentry {5}{4}{7}{108/108}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {108}{108}}
+\headcommand {\slideentry {5}{4}{8}{109/109}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {109}{109}}
+\headcommand {\slideentry {5}{4}{9}{110/110}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {110}{110}}
+\headcommand {\slideentry {5}{4}{10}{111/111}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {111}{111}}
+\headcommand {\slideentry {5}{4}{11}{112/112}{Universal Properties}{0}}
+\headcommand {\beamer@framepages {112}{112}}
+\headcommand {\beamer@sectionpages {64}{112}}
+\headcommand {\beamer@subsectionpages {102}{112}}
+\headcommand {\sectionentry {6}{The Yoneda Perspective}{113}{The Yoneda Perspective}{0}}
+\headcommand {\slideentry {6}{0}{1}{113/113}{}{0}}
+\headcommand {\beamer@framepages {113}{113}}
+\headcommand {\slideentry {6}{0}{2}{114/114}{}{0}}
+\headcommand {\beamer@framepages {114}{114}}
+\headcommand {\slideentry {6}{0}{3}{115/115}{}{0}}
+\headcommand {\beamer@framepages {115}{115}}
+\headcommand {\slideentry {6}{0}{4}{116/116}{}{0}}
+\headcommand {\beamer@framepages {116}{116}}
+\headcommand {\slideentry {6}{0}{5}{117/117}{}{0}}
+\headcommand {\beamer@framepages {117}{117}}
+\headcommand {\slideentry {6}{0}{6}{118/118}{}{0}}
+\headcommand {\beamer@framepages {118}{118}}
+\headcommand {\slideentry {6}{0}{7}{119/119}{}{0}}
+\headcommand {\beamer@framepages {119}{119}}
+\headcommand {\slideentry {6}{0}{8}{120/120}{}{0}}
+\headcommand {\beamer@framepages {120}{120}}
+\headcommand {\slideentry {6}{0}{9}{121/121}{}{0}}
+\headcommand {\beamer@framepages {121}{121}}
+\headcommand {\slideentry {6}{0}{10}{122/122}{}{0}}
+\headcommand {\beamer@framepages {122}{122}}
+\headcommand {\slideentry {6}{0}{11}{123/123}{}{0}}
+\headcommand {\beamer@framepages {123}{123}}
+\headcommand {\slideentry {6}{0}{12}{124/124}{}{0}}
+\headcommand {\beamer@framepages {124}{124}}
+\headcommand {\slideentry {6}{0}{13}{125/125}{}{0}}
+\headcommand {\beamer@framepages {125}{125}}
+\headcommand {\beamer@subsectionpages {113}{125}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{126}{Representable Functors}}
+\headcommand {\slideentry {6}{1}{1}{126/126}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {126}{126}}
+\headcommand {\slideentry {6}{1}{2}{127/127}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {127}{127}}
+\headcommand {\slideentry {6}{1}{3}{128/128}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {128}{128}}
+\headcommand {\slideentry {6}{1}{4}{129/129}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {129}{129}}
+\headcommand {\slideentry {6}{1}{5}{130/130}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {130}{130}}
+\headcommand {\slideentry {6}{1}{6}{131/131}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {131}{131}}
+\headcommand {\slideentry {6}{1}{7}{132/132}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {132}{132}}
+\headcommand {\slideentry {6}{1}{8}{133/133}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {133}{133}}
+\headcommand {\slideentry {6}{1}{9}{134/134}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {134}{134}}
+\headcommand {\slideentry {6}{1}{10}{135/135}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {135}{135}}
+\headcommand {\slideentry {6}{1}{11}{136/136}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {136}{136}}
+\headcommand {\slideentry {6}{1}{12}{137/137}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {137}{137}}
+\headcommand {\slideentry {6}{1}{13}{138/138}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {138}{138}}
+\headcommand {\slideentry {6}{1}{14}{139/139}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {139}{139}}
+\headcommand {\slideentry {6}{1}{15}{140/140}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {140}{140}}
+\headcommand {\slideentry {6}{1}{16}{141/141}{Representable Functors}{0}}
+\headcommand {\beamer@framepages {141}{141}}
+\headcommand {\beamer@sectionpages {113}{141}}
+\headcommand {\beamer@subsectionpages {126}{141}}
+\headcommand {\sectionentry {7}{Bringing it all back home}{142}{Bringing it all back home}{0}}
+\headcommand {\slideentry {7}{0}{1}{142/142}{}{0}}
+\headcommand {\beamer@framepages {142}{142}}
+\headcommand {\slideentry {7}{0}{2}{143/143}{}{0}}
+\headcommand {\beamer@framepages {143}{143}}
+\headcommand {\slideentry {7}{0}{3}{144/144}{}{0}}
+\headcommand {\beamer@framepages {144}{144}}
+\headcommand {\slideentry {7}{0}{4}{145/145}{}{0}}
+\headcommand {\beamer@framepages {145}{145}}
+\headcommand {\slideentry {7}{0}{5}{146/146}{}{0}}
+\headcommand {\beamer@framepages {146}{146}}
+\headcommand {\slideentry {7}{0}{6}{147/147}{}{0}}
+\headcommand {\beamer@framepages {147}{147}}
+\headcommand {\slideentry {7}{0}{7}{148/148}{}{0}}
+\headcommand {\beamer@framepages {148}{148}}
+\headcommand {\slideentry {7}{0}{8}{149/149}{}{0}}
+\headcommand {\beamer@framepages {149}{149}}
+\headcommand {\slideentry {7}{0}{9}{150/150}{}{0}}
+\headcommand {\beamer@framepages {150}{150}}
+\headcommand {\beamer@partpages {1}{150}}
+\headcommand {\beamer@subsectionpages {142}{150}}
+\headcommand {\beamer@sectionpages {142}{150}}
+\headcommand {\beamer@documentpages {150}}
+\headcommand {\gdef \inserttotalframenumber {150}}

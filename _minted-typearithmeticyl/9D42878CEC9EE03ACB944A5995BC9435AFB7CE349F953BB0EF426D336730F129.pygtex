@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+	
+	\PYG{k+kt}{Maybe} \PYG{esc}{$\two$}
+	\PYG{o}{\PYGZti{}} \PYG{k+kt}{Nothing} \PYG{o}{+} \PYG{k+kt}{Just} \PYG{esc}{$\two$}
+	\PYG{o}{\PYGZti{}} \PYG{esc}{$\one$} \PYG{o}{+} \PYG{esc}{$\two$}
+	\PYG{o}{\PYGZti{}} \PYG{esc}{$\three$}
+\end{Verbatim}

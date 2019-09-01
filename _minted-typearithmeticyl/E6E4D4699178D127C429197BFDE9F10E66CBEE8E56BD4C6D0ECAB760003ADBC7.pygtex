@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-	
-	\PYG{k+kt}{Maybe} \PYG{k+kt}{Bool}
-	\PYG{o+ow}{=} \PYG{k+kt}{Nothing} \PYG{o}{+} \PYG{k+kt}{Just} \PYG{p}{(}\PYG{k+kt}{True} \PYG{o}{+} \PYG{k+kt}{False}\PYG{p}{)}
-	\PYG{o+ow}{=} \PYG{l+m+mi}{1} \PYG{o}{+} \PYG{l+m+mi}{1} \PYG{o}{+} \PYG{l+m+mi}{1}
-	\PYG{o+ow}{=} \PYG{l+m+mi}{3}
-\end{Verbatim}
