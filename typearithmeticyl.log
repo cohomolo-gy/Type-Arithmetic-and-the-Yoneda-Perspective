@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.23)  1 SEP 2019 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.23)  1 SEP 2019 14:52
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2034,7 +2034,7 @@ AB760003ADBC7.pygtex)) [139
 \openout5 = `typearithmeticyl.pyg'.
 
 
-(./_minted-typearithmeticyl/507BDADED7DE3560D3CBB29563E2068BAFB7CE349F953BB0EF4
+(./_minted-typearithmeticyl/37C4BE8C317116459E828275181A682CAFB7CE349F953BB0EF4
 26D336730F129.pygtex)) [144
 
 ]
@@ -2044,7 +2044,7 @@ AB760003ADBC7.pygtex)) [139
 \openout5 = `typearithmeticyl.pyg'.
 
 
-(./_minted-typearithmeticyl/AC67A3268C75AB383DD259A3CA5B777EAFB7CE349F953BB0EF4
+(./_minted-typearithmeticyl/41BC22CB75723CA6E14F2505F1850018AFB7CE349F953BB0EF4
 26D336730F129.pygtex)) [145
 
 ]
@@ -2064,7 +2064,7 @@ AB760003ADBC7.pygtex)) [139
 \openout5 = `typearithmeticyl.pyg'.
 
 
-(./_minted-typearithmeticyl/00AA633EBB080FB070BEB05BE1FEDAEDAFB7CE349F953BB0EF4
+(./_minted-typearithmeticyl/6AE7144AB563659D97E314144C8F8437AFB7CE349F953BB0EF4
 26D336730F129.pygtex)) [147
 
 ]
@@ -2074,7 +2074,7 @@ AB760003ADBC7.pygtex)) [139
 \openout5 = `typearithmeticyl.pyg'.
 
 
-(./_minted-typearithmeticyl/8C14C8567D57DBBE3667EAF74342F280AFB7CE349F953BB0EF4
+(./_minted-typearithmeticyl/B8E42BDEA09E0F8E71316B909A883BF8AFB7CE349F953BB0EF4
 26D336730F129.pygtex)) [148
 
 ]
@@ -2084,10 +2084,41 @@ AB760003ADBC7.pygtex)) [139
 \openout5 = `typearithmeticyl.pyg'.
 
 
-(./_minted-typearithmeticyl/856AD6D4DB2AE7966F7775BEDB5C2721AFB7CE349F953BB0EF4
+(./_minted-typearithmeticyl/66C70A635EAD0947D3D48E06B0E376F5AFB7CE349F953BB0EF4
 26D336730F129.pygtex)) [149
 
 ] [150
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+runsystem(pygmentize -l haskell -f latex -P commandprefix=PYG -F tokenmerge -P 
+"escapeinside=||" -P mathescape=True -o _minted-typearithmeticyl/78F64152B03731
+88FF6DE0A93FBF8677AFB7CE349F953BB0EF426D336730F129.pygtex typearithmeticyl.pyg)
+...executed.
+
+
+(./_minted-typearithmeticyl/78F64152B0373188FF6DE0A93FBF8677AFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [151
+
+] [152
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/06B94C630D8B153A13674F22B17AB222AFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [153
+
+] [154
+
+] [155
 
 ]
 \tf@nav=\write8
@@ -2099,11 +2130,14 @@ AB760003ADBC7.pygtex)) [139
 \tf@snm=\write10
 \openout10 = `typearithmeticyl.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1359.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1359.
+runsystem(rm _minted-typearithmeticyl/CC0E6E4567EFA823765C1CB7367C7474AFB7CE349
+F953BB0EF426D336730F129.pygtex)...executed.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1402.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1402.
  (./typearithmeticyl.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1359.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1359.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1402.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1402.
 
 Package rerunfilecheck Info: File `typearithmeticyl.out' has not changed.
 (rerunfilecheck)             Checksum: 9764D7354647AF7180EACD08502D1B9F;1662.
@@ -2111,10 +2145,10 @@ runsystem(rm typearithmeticyl.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 36176 strings out of 492609
- 731109 string characters out of 6129048
- 828961 words of memory out of 5000000
- 38999 multiletter control sequences out of 15000+600000
+ 36210 strings out of 492609
+ 732140 string characters out of 6129048
+ 829346 words of memory out of 5000000
+ 39012 multiletter control sequences out of 15000+600000
  549937 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,28n,84p,783b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2133,10 +2167,10 @@ local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loca
 l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on typearithmeticyl.pdf (150 pages, 249169 bytes).
+Output written on typearithmeticyl.pdf (155 pages, 252893 bytes).
 PDF statistics:
- 1057 PDF objects out of 1200 (max. 8388607)
- 874 compressed objects within 9 object streams
- 327 named destinations out of 1000 (max. 500000)
+ 1085 PDF objects out of 1200 (max. 8388607)
+ 897 compressed objects within 9 object streams
+ 337 named destinations out of 1000 (max. 500000)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 

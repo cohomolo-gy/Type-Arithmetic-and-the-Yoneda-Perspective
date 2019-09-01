@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{esc}{$\forall$} \PYG{n}{a}\PYG{o}{.} \PYG{p}{(}\PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}\PYG{p}{)} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}
+    \PYG{c+c1}{\PYGZhy{}\PYGZhy{} (a \PYGZhy{}\PYGZgt{} a, a) |$\cong$| (|$\one$| + a) \PYGZhy{}\PYGZgt{} a}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{a}\PYG{o}{.} \PYG{p}{(}\PYG{p}{(}\PYG{esc}{$\one$} \PYG{o}{+} \PYG{n}{a}\PYG{p}{)} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}\PYG{p}{)} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}
+    \PYG{c+c1}{\PYGZhy{}\PYGZhy{} define f x = |$\one$| + x}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{a}\PYG{o}{.} \PYG{p}{(}\PYG{n}{f} \PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}\PYG{p}{)} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\mu$} \PYG{n}{x}\PYG{o}{.} \PYG{n}{f} \PYG{n}{x}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\mu$} \PYG{n}{x}\PYG{o}{.} \PYG{esc}{$\one$} \PYG{o}{+} \PYG{n}{x}
+\end{Verbatim}

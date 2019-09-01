@@ -682,6 +682,11 @@ In Haskell, we represent this data as a typeclass
 	 Operationally, this can be seen as "flipping the direction of arrows" in the target category. 
 }
 
+\frame
+{
+	Saying "$F$ is a contravariant functor from $\cc$ to $\dd$" is saying that one has a covariant functor $F : \opc \to \dd$. When it matters, I'll just tell you which one that is.
+
+}
 
 \frame
 {
@@ -696,12 +701,6 @@ In Haskell, we represent this data as a typeclass
 \frame
 {
 	Enumeration defines a cardinality functor $|\cdot|: \cat{Fin_{Iso}} \to \cat{Set}$.  
-}
-
-\frame
-{
-	This is often unnecessary data, as the saying a "$F$ is a contravariant functor from $\cc$ to $\dd$" is saying exactly that one has a covariant functor $F : \opc \to \dd$. When it matters, I'll just tell you which one that is.
-
 }
 
 \frame
@@ -1204,14 +1203,16 @@ Namely, we have the following functions:
 	Now, we won't prove this lemma here (it's a bit long for a short talk like this), but we can use this fact to show the operational intuition behind many statements. 
 }
 
-\begin{frame}
-\begin{block}{Different Yoneda lemmas}
+\frame
+{
+\begin{definition}[Different Yoneda lemmas]
 \begin{tabular}{rc}
-Covariant functor:     & $(\forall x. (a \to x) \to f~x) \cong f~a$. \\
-Contravariant functor: & $(\forall x. (x \to a) \to f~x) \cong f~a$.
+Covariant functor:     & $(\forall x. (\red{a} \to x) \to f~x) \cong f~\red{a}$. \\
+
+Contravariant functor: & $(\forall x. (x \to \blue{a}) \to f~x) \cong f~\blue{a}$.
 \end{tabular}
-\end{block}
-\end{frame}
+\end{definition}
+}
 
 \begin{frame}[fragile]
 Expressed in Haskell these look like this:
@@ -1277,11 +1278,11 @@ toFrom = id
 
 \begin{minted}[escapeinside=||,mathescape]{haskell}
 |$\forall$| a. a -> a
-  |$\cong$| |$\forall$| a. (() -> a) -> a
+  |$\cong$| |$\forall$| a. (|$\one$| -> a) -> a
   -- newtype Id a = a
-  |$\cong$| |$\forall$| a. (() -> a) -> Id a
-  |$\cong$| Id ()
-  |$\cong$| ()
+  |$\cong$| |$\forall$| a. (|$\one$| -> a) -> Id a
+  |$\cong$| Id |$\one$|
+  |$\cong$| |$\one$|
 \end{minted}
 Since () has only one inhabitant, we conclude that $\forall a. a \to a$ has only one inhabitant as well.
 \end{frame}
@@ -1291,13 +1292,13 @@ Since () has only one inhabitant, we conclude that $\forall a. a \to a$ has only
 |$\forall$| a x. (a, x) -> a
     -- uncurrying
     |$\cong$| |$\forall$| a x. x -> a -> a
-    -- () -> x $\cong$ x
-    |$\cong$| |$\forall$| a x. (() -> x) -> a -> a
+    -- |$\one$|-> x $\cong$ x
+    |$\cong$| |$\forall$| a x. (|$\one$| -> x) -> a -> a
     -- Yoneda with newtype F a x = a -> a
-    |$\cong$| |$\forall$| a. F a ()
+    |$\cong$| |$\forall$| a. F a |$\one$|
     |$\cong$| |$\forall$| a. a -> a
     -- reusing the proof above
-    |$\cong$| ()
+    |$\cong$| |$\one$|
 \end{minted}
 \end{frame}
 
@@ -1319,7 +1320,7 @@ Since () has only one inhabitant, we conclude that $\forall a. a \to a$ has only
     |$\cong$| |$\forall$| a b. F a b a
     |$\cong$| |$\forall$| a b. b -> a -> a
     -- reusing one of the above theorems
-    |$\cong$| ()
+    |$\cong$| |$\one$|
 \end{minted}
 \end{frame}
 
@@ -1335,21 +1336,63 @@ Since () has only one inhabitant, we conclude that $\forall a. a \to a$ has only
     |$\cong$| |$\forall$| a. G a a
     |$\cong$| |$\forall$| a. a -> a
     -- reusing the above theorems
-    |$\cong$| ()
+    |$\cong$| |$\one$|
 \end{minted}
 \end{frame}
 
 \begin{frame}[fragile]
 \begin{minted}[escapeinside=||,mathescape]{haskell}
-|$\forall$| a. (a -> 0, a -> 0) -> (a -> 0)
-    |$\cong$| |$\forall$| a. a -> (a -> 0, a -> 0) -> 0
-    |$\cong$| |$\forall$| a. (1 -> a) -> (a -> 0, a -> 0) -> 0
-    |$\cong$| (1 -> 0, 1 -> 0) -> 0
-    |$\cong$| (0, 0) -> 0
-    |$\cong$| 0 -> 0
-    |$\cong$| 1
+|$\forall$| a. (a -> |$\zero$|, a -> |$\zero$|) -> (a -> |$\zero$|)
+    |$\cong$| |$\forall$| a. a -> (a -> |$\zero$|, a -> |$\zero$|) -> |$\zero$|
+    |$\cong$| |$\forall$| a. (|$\one$| -> a) -> (a -> |$\zero$|, a -> |$\zero$|) -> |$\zero$|
+    |$\cong$| (|$\one$| -> |$\zero$|, |$\one$| -> |$\zero$|) -> |$\zero$|
+    |$\cong$| (|$\zero$|, |$\zero$|) -> |$\zero$|
+    |$\cong$| |$\zero$| -> |$\zero$|
+    |$\cong$| |$\one$|
 \end{minted}
 \end{frame}
+
+\frame
+{
+\begin{definition}[Yoneda (Propositional Equality)]
+    $f~\red{a} \cong \forall~x. (\red{a} = x) \to f~x$ with no restrictions on $f$!
+\end{definition}
+}
+
+\begin{frame}[fragile]
+
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| f z. f z -> f z
+    -- newtype F z x = (x = z)
+    |$\cong$| |$\forall$| z f. (|$\one$| -> f z) -> f z
+    |$\cong$| |$\forall$| z f. (|$\forall$| x. F z x -> f x) -> f z
+    |$\cong$| |$\forall$| z. F z z
+    |$\cong$| |$\forall$| z. z = z
+    |$\cong$| |$\one$|
+\end{minted}
+\end{frame}
+
+\frame
+{
+	What about types that have \mred{a} occurring in positive and negative focus like $\forall a. (a \to a) \to (a \to a)$?
+}
+
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a. (a -> a) -> a -> a
+    -- (a -> a, a) |$\cong$| (|$\one$| + a) -> a
+    |$\cong$| |$\forall$| a. ((|$\one$| + a) -> a) -> a
+    -- define f x = |$\one$| + x
+    |$\cong$| |$\forall$| a. (f a -> a) -> a
+    |$\cong$| |$\mu$| x. f x
+    |$\cong$| |$\mu$| x. |$\one$| + x
+\end{minted}
+\end{frame}
+
+\frame
+{
+	And this can even be generalized to containers!
+}
 
 \frame
 {

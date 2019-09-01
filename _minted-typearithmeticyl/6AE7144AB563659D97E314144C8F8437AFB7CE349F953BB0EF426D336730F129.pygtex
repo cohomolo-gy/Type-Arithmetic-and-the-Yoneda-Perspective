@@ -4,5 +4,5 @@
     \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{a} \PYG{n}{b}\PYG{o}{.} \PYG{k+kt}{F} \PYG{n}{a} \PYG{n}{b} \PYG{n}{a}
     \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{a} \PYG{n}{b}\PYG{o}{.} \PYG{n}{b} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}
     \PYG{c+c1}{\PYGZhy{}\PYGZhy{} reusing one of the above theorems}
-    \PYG{esc}{$\cong$} \PYG{n+nb}{()}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\one$}
 \end{Verbatim}

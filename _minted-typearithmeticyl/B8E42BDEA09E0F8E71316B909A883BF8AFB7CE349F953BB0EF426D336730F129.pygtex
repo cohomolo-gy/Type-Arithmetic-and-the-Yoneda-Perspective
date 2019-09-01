@@ -9,5 +9,5 @@
     \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{a}\PYG{o}{.} \PYG{k+kt}{G} \PYG{n}{a} \PYG{n}{a}
     \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{a}\PYG{o}{.} \PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{a}
     \PYG{c+c1}{\PYGZhy{}\PYGZhy{} reusing the above theorems}
-    \PYG{esc}{$\cong$} \PYG{n+nb}{()}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\one$}
 \end{Verbatim}

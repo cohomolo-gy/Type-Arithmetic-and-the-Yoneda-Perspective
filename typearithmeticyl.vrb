@@ -1,9 +1,9 @@
 \begin{minted}[escapeinside=||,mathescape]{haskell}
-|$\forall$| a. (a -> 0, a -> 0) -> (a -> 0)
-    |$\cong$| |$\forall$| a. a -> (a -> 0, a -> 0) -> 0
-    |$\cong$| |$\forall$| a. (1 -> a) -> (a -> 0, a -> 0) -> 0
-    |$\cong$| (1 -> 0, 1 -> 0) -> 0
-    |$\cong$| (0, 0) -> 0
-    |$\cong$| 0 -> 0
-    |$\cong$| 1
+|$\forall$| a. (a -> a) -> a -> a
+    -- (a -> a, a) |$\cong$| (|$\one$| + a) -> a
+    |$\cong$| |$\forall$| a. ((|$\one$| + a) -> a) -> a
+    -- define f x = |$\one$| + x
+    |$\cong$| |$\forall$| a. (f a -> a) -> a
+    |$\cong$| |$\mu$| x. f x
+    |$\cong$| |$\mu$| x. |$\one$| + x
 \end{minted}

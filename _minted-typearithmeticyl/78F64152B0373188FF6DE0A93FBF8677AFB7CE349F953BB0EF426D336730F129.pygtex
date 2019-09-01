@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{esc}{$\forall$} \PYG{n}{f} \PYG{n}{z}\PYG{o}{.} \PYG{n}{f} \PYG{n}{z} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{f} \PYG{n}{z}
+    \PYG{c+c1}{\PYGZhy{}\PYGZhy{} newtype F z x = (x = z)}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{z} \PYG{n}{f}\PYG{o}{.} \PYG{p}{(}\PYG{esc}{$\one$} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{f} \PYG{n}{z}\PYG{p}{)} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{f} \PYG{n}{z}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{z} \PYG{n}{f}\PYG{o}{.} \PYG{p}{(}\PYG{esc}{$\forall$} \PYG{n}{x}\PYG{o}{.} \PYG{k+kt}{F} \PYG{n}{z} \PYG{n}{x} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{f} \PYG{n}{x}\PYG{p}{)} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{f} \PYG{n}{z}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{z}\PYG{o}{.} \PYG{k+kt}{F} \PYG{n}{z} \PYG{n}{z}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{z}\PYG{o}{.} \PYG{n}{z} \PYG{o+ow}{=} \PYG{n}{z}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\one$}
+\end{Verbatim}
