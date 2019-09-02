@@ -1205,6 +1205,20 @@ Namely, we have the following functions:
 
 \frame
 {
+	\begin{proof}[Proof of Distribution: $(\red{a} + \blue{b}) \times c \cong (\red{a} \times c) + (\blue{b} \times c)$]
+		\[
+		\begin{aligned}
+			(\red{a} + \blue{b}) \times c &\cong \cc((\red{a} + \blue{b}) \times c, x) & - yoneda \\
+			& \cong \cc(\red{a}  + \blue{b}, \cc(c, x)) &- curry \\
+			& \cong \cc(\red{a} , \cc(c, x)) \times \cc(\blue{b}, \cc(c, x)) &- pairing \\
+			& \cong \cc(\red{a}  \times c, x) + \cc(\blue{b} \times c, x)) &- uncurry \\
+			& \cong \cc(\red{a}  \times c) + (\blue{b} \times c) &- yoneda
+		\end{aligned}
+		\]
+	\end{proof}
+}
+\frame
+{
 \begin{definition}[Different Yoneda lemmas]
 \begin{tabular}{rc}
 Covariant functor:     & $(\forall x. (\red{a} \to x) \to f~x) \cong f~\red{a}$. \\
