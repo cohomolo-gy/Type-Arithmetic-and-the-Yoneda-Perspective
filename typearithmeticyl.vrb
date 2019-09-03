@@ -1,9 +1,4 @@
 \begin{minted}[escapeinside=||,mathescape]{haskell}
-|$\forall$| a. (a -> a) -> a -> a
-    -- (a -> a, a) |$\cong$| (|$\one$| + a) -> a
-    |$\cong$| |$\forall$| a. ((|$\one$| + a) -> a) -> a
-    -- define f x = |$\one$| + x
-    |$\cong$| |$\forall$| a. (f a -> a) -> a
-    |$\cong$| |$\mu$| x. f x
-    |$\cong$| |$\mu$| x. |$\one$| + x
+|$\forall$| a b. (a -> b) -> [a] -> [b]
+    |$\cong$| (n : Nat) -> [Fin n]
 \end{minted}

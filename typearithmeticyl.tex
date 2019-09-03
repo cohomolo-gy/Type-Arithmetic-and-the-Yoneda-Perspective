@@ -132,12 +132,7 @@
 
 \frame
 { 
-	Many of you know these topics already without knowing the details. Much of it is folklore within the community. But there are new ways of thinking about it that I gaurantee you haven't seen before, and some of it even translates into our work on Profunctor Optics! 
-}
-
-\frame
-{ 
-	We'll see if we have time for that last one. If we don't get to it, it will be included as an informal unconference.
+	Many of you know these topics already without knowing the details. Much of it is folklore within the community. But there are new ways of thinking about it that I guarantee you haven't seen before, and some of it even translates into our work on Profunctor Optics! 
 }
 
 \subsection{What and How?}
@@ -168,11 +163,6 @@
 }
 
 \section{Some Type Arithmetic}
-
-\frame
-{
-	Let's do a quick warm up 
-}
 
 \subsection{Ground Rules}
 
@@ -277,7 +267,7 @@ Again, we can apply some natural deduction, nothing that  \mblue{\two} has preci
 
 \frame
 {
-	Thus, the number of inhabitants of \mred{\cat{Maybe}} can be deduced to be $[1 + |\red{a}|]$ Lets move on.
+	Thus, the number of inhabitants of \mred{\cat{Maybe}} can be deduced to be $[1 + |\red{a}|]$
 }
 
 \subsection{Multiplication}
@@ -631,6 +621,7 @@ Void & $\emptyset$ & 0 & ? \\ \hline
 	\end{itemize}
 }
 
+
 \frame
 {
 
@@ -648,16 +639,38 @@ Void & $\emptyset$ & 0 & ? \\ \hline
 
 \frame
 {
+	We can also speak of the "size" of a category in a precise sense
+}
+
+\frame
+{
+	\begin{definition}[Size matters]
+		A category $\cc$ is said to be...
+		\begin{itemize}
+			\item \textbf{small} if there are at most a set's worth of morphisms and objects in the category
+			\item \textbf{locally small} if for all $\blue{c}, \red{d}$, $\cc(\blue{c}, \red{d})$ is a set
+			\item \textbf{large} if it is not small
+		\end{itemize}
+	\end{definition}
+}
+
+\frame
+{
+	For our purposes, everything will be small (set-sized)
+}
+
+\frame
+{
 	
 	\begin{definition}[Functor]
 		A functor $F : \cc \to \dd$ between categories consists of the following data: 
 		
 		\begin{itemize}
-			\item an object $Fc$ in $\dd$ for every object c of $\cc$
-			\item a morphism $Ff : Fc \to Fd$ in $\dd$ for each morphism $f : c \to d$ of $\cc$.
+			\item an object $F\blue{c}$ in $\dd$ for every object \mblue{c} of $\cc$
+			\item a morphism $Ff : F\blue{c} \to F\red{d}$ in $\dd$ for each morphism $f : \blue{c} \to \red{d}$ of $\cc$.
 		\end{itemize}
 		
-		Additionally, we require that $Fg \cdot Ff = F(gf)$ when $g$ and $f$ are a composable pair, and that for every object $c$ in $\cc$, $F1_c = 1_{Fc}$.
+		Additionally, we require that $Fg \cdot Ff = F(gf)$ when $g$ and $f$ are a composable pair, and that for every object \mblue{c} in $\cc$, $F1_{\blue{c}} = 1_{F\blue{c}}$.
 	\end{definition}
 }
 
@@ -705,14 +718,14 @@ In Haskell, we represent this data as a typeclass
 
 \frame
 {
-	As an important example, for any object $c$ of $\cc$, we have the \textbf{covariant represented functor of $c$}, $\cc(c, -)$, which is a functor $\cc \to \cat{Set}$.
+	As an important example, for any object \mblue{c} of $\cc$, we have the \textbf{covariant represented functor of \blue{c}}, $\cc(\blue{c}, -)$, which is a functor $\cc \to \cat{Set}$.
 	
 }
 
 \frame
 {
 
- LIkewise, we have the \textbf{contravariant functor represented by $c$}: $\cc(-, c) : \opc \to \cat{Set}$.
+ LIkewise, we have the \textbf{contravariant functor represented by \red{c}}: $\cc(-, \red{c}) : \opc \to \cat{Set}$.
 
 }
 
@@ -870,7 +883,7 @@ Namely, we have the following functions:
 
 \frame
 { 
-	\begin{definition}[Coroduct]
+	\begin{definition}[Coproduct]
 	
 		A \textbf{coproduct} in a category $\cc$ is an object $P$ together with morphisms $i_c : c \to C $ and $i_d : C \to d$ for $c,d$ in $\cc$ such that for any other object $N$ with morphisms $f_c : c \to N$ and $f_d : d \to N$, then each $f_{(-)}$ can be factored through a unique function $f : C \to N$ such that $f_c = fi_c$ and $f_d = fi_d$. 
 	\end{definition}
@@ -1023,12 +1036,6 @@ Namely, we have the following functions:
 	\textbf{Candidate}: $\red{a} \cong \blue{b} \Leftrightarrow \forall x. \cc(\red{a}, x) \cong \cc(\blue{b}, x)$
 }
 
-
-\frame
-{
-	This is a provable statement. 
-}
-
 \frame
 {
 	\begin{definition}[Yoneda Embedding (corollary)]
@@ -1040,7 +1047,7 @@ Namely, we have the following functions:
 \begin{frame}[fragile]
 
 	\begin{proof}[Proof of $(\Leftarrow)$]
-		Suppose $\cc(x, \red{a}) \cong \cc(x, \blue{b})$ for all objects x. Taking x to be \red{a} and \blue{b} successively, then, we have bijections: 
+		Suppose $\cc(\red{a}, x) \cong \cc(\blue{b}, x)$ for all objects x. Taking x to be \red{a} and \blue{b} successively, then, we have bijections: 
 		\[
 		\begin{aligned}
 			\begin{tikzcd}[
@@ -1065,7 +1072,7 @@ Namely, we have the following functions:
 \begin{frame}[fragile]
 
 	\begin{proof}[Proof of $(\Leftarrow)$]
-		Suppose $\cc(x, \red{a}) \cong \cc(x, \blue{b})$ for all objects x. Taking x to be \red{a} and \blue{b} successively, then, we have bijections: 
+		Suppose $\cc(\red{a}, x) \cong \cc(\blue{b}, x)$ for all objects x. Taking x to be \red{a} and \blue{b} successively, then, we have bijections: 
 		\[
 		\begin{aligned}
 			\begin{tikzcd}[
@@ -1094,7 +1101,7 @@ Namely, we have the following functions:
 \begin{frame}[fragile]
 
 	\begin{proof}[Proof of $(\Leftarrow)$]
-		Suppose $\cc(x, \red{a}) \cong \cc(x, \blue{b})$ for all objects x. Taking x to be \red{a} and \blue{b} successively, then, we use bijections: 
+		Suppose $\cc(\red{a}, x) \cong \cc(\blue{b}, x)$ for all objects x. Taking x to be \red{a} and \blue{b} successively, then, we use bijections: 
 		\[
 		\begin{aligned}
 			\begin{tikzcd}[
@@ -1136,11 +1143,6 @@ Namely, we have the following functions:
 	In previous slides we mentioned a functor "represented" by an object.
 }
 
-\frame
-{
-	What does this mean? 
-}
-
 
 \frame
 {
@@ -1169,7 +1171,7 @@ Namely, we have the following functions:
 		
 		\begin{itemize}
 			\item an object \mblue{c} that is said to \textbf{represent} $F$
-			\item a natural isomorphism $\Phi : F \cong \cc(c, -)$
+			\item a natural isomorphism $\Phi : F \cong \cc(\blue{c}, -)$
 		\end{itemize}
 		
 		This data together is called a \textbf{representation} of $F$. 
@@ -1187,8 +1189,8 @@ Namely, we have the following functions:
 
 \frame
 {
-	\begin{definition}[Representable Yoneda]
-		Let $F : \cc \to \cat{Set}$ be a functor where $\cc$ is a locally small category (every collection of morphisms $\cc(c, d)$ between any two objects forms a set). Then, $F\blue{c} \cong [\cc, \cat{Set}](\cc(\blue{c}, -), F)$. This bijection associates a natural transformation $\alpha : \cc(\blue{c}, -) \Rightarrow F$ with the element $\alpha_{\blue{c}}(1_{\blue{c}})$ in $F\blue{c}$. 
+	\begin{definition}[The Yoneda lemma]
+		Let $F : \cc \to \cat{Set}$ be a functor where $\cc$ is a locally small category (every collection of morphisms $\cc(\blue{c}, \red{d})$ between any two objects forms a set). Then, $F\blue{c} \cong [\cc, \cat{Set}](\cc(\blue{c}, -), F)$. This bijection associates a natural transformation $\alpha : \cc(\blue{c}, -) \Rightarrow F$ with the element $\alpha_{\blue{c}}(1_{\blue{c}})$ in $F\blue{c}$. 
 	\end{definition}
 }
 
@@ -1197,10 +1199,37 @@ Namely, we have the following functions:
 	Furthermore, this correspondence is natural in \blue{c} and in $F$.
 }
 
+\frame
+{
+\begin{definition}[Different Yoneda lemmas in Haskell]
+\begin{tabular}{rc}
+
+Covariant functor: & $(\forall x. (\blue{a} \to x) \to f~x) \cong f~\blue{a}$. \\
+Contravariant functor:     & $(\forall x. (x \to \red{b}) \to f~x) \cong f~\red{b}$. 
+\end{tabular}
+\end{definition}
+}
 
 \frame
 {
-	Now, we won't prove this lemma here (it's a bit long for a short talk like this), but we can use this fact to show the operational intuition behind many statements. 
+	\begin{definition}[Covariant Yoneda facts]
+		\begin{itemize}
+			\item Lemma: $[\cc, \cat{Set}](\cc(\blue{c}, -), F) \cong F\blue{c}$
+			\item Embedding: $\blue{c} \cong \red{d} \Leftrightarrow \cc(\blue{c}, -) \cong \cc(\red{d}, -)$
+			\item Code: $ (\forall x. (\blue{a} \to x) \to f~x) \cong f~\blue{a}$
+		\end{itemize}
+	\end{definition}
+}
+
+\frame
+{
+	\begin{definition}[Contravariant Yoneda facts]
+		\begin{itemize}
+			\item Lemma: $[\cc, \cat{Set}](\cc(-, \red{d}), F) \cong F\red{d}$
+			\item Embedding: $\blue{c} \cong \red{d} \Leftrightarrow \cc(-, \blue{c}) \cong \cc(-, \red{d})$
+			\item Code: $(\forall x. (x \to \red{b}) \to f~x) \cong f~\red{b}$. 
+		\end{itemize}
+	\end{definition}
 }
 
 \frame
@@ -1208,25 +1237,16 @@ Namely, we have the following functions:
 	\begin{proof}[Proof of Distribution: $(\red{a} + \blue{b}) \times c \cong (\red{a} \times c) + (\blue{b} \times c)$]
 		\[
 		\begin{aligned}
-			(\red{a} + \blue{b}) \times c &\cong \cc((\red{a} + \blue{b}) \times c, x) & - yoneda \\
-			& \cong \cc(\red{a}  + \blue{b}, \cc(c, x)) &- curry \\
-			& \cong \cc(\red{a} , \cc(c, x)) \times \cc(\blue{b}, \cc(c, x)) &- pairing \\
-			& \cong \cc(\red{a}  \times c, x) + \cc(\blue{b} \times c, x)) &- uncurry \\
-			& \cong \cc(\red{a}  \times c) + (\blue{b} \times c) &- yoneda
+			(\red{a} + \blue{b}) \times c &\cong \cc((\red{a} + \blue{b}) \times c, x) &(\text{yoneda embedding}) \\
+			& \cong \cc(\red{a}  + \blue{b}, \cc(c, x)) &(curry) \\
+			& \cong \cc(\red{a} , \cc(c, x)) \times \cc(\blue{b}, \cc(c, x)) &(pairing) \\
+			& \cong \cc(\red{a}  \times c, x) + \cc(\blue{b} \times c, x)) &(uncurry) \\
+			& \cong \cc(\red{a}  \times c) + (\blue{b} \times c) &(un-yoneda)
 		\end{aligned}
 		\]
 	\end{proof}
 }
-\frame
-{
-\begin{definition}[Different Yoneda lemmas]
-\begin{tabular}{rc}
-Covariant functor:     & $(\forall x. (\red{a} \to x) \to f~x) \cong f~\red{a}$. \\
 
-Contravariant functor: & $(\forall x. (x \to \blue{a}) \to f~x) \cong f~\blue{a}$.
-\end{tabular}
-\end{definition}
-}
 
 \begin{frame}[fragile]
 Expressed in Haskell these look like this:
@@ -1320,10 +1340,11 @@ Since () has only one inhabitant, we conclude that $\forall a. a \to a$ has only
 \begin{frame}[fragile]
 \begin{minted}[escapeinside=||,mathescape]{haskell}
 |$\forall$| a. (a, a) -> a
-    -- (a, a) $\cong$ Bool -> a
-    |$\cong$| |$\forall$| a. (Bool -> a) -> a
+    |$\cong$| |$\forall$| a. (|$\one$| -> a, |$\one$| -> a) -> a
+    -- unpairing 
+    |$\cong$| |$\forall$| a. (|$\two$| -> a) -> a
     -- Yoneda with newtype F x = x
-    |$\cong$| Bool
+    |$\cong$| |$\two$|
 \end{minted}
 \end{frame}
 
@@ -1407,6 +1428,49 @@ Since () has only one inhabitant, we conclude that $\forall a. a \to a$ has only
 {
 	And this can even be generalized to containers!
 }
+
+\begin{frame}[fragile]
+Functors of the shape, $f x \cong \Sigma_i k_i \to x$, are called {\em containers}. Almost every type constructor with a functor instance is a container:
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+Maybe x       |$\cong$| (|$\zero$| -> x) + (|$\one$| -> x)
+(Bool, x)     |$\cong$| (|$\one$| -> x) + (|$\one$| -> x)
+Const Bool x  |$\cong$| (|$\zero$| -> x) + (|$\zero$| -> x)
+Either Bool x |$\cong$| (|$\zero$| -> x) + (|$\zero$| -> x) + (|$\one$| -> x)
+[x] |$\cong$| (|$\zero$| -> x) + (|$\one$| -> x) + (|$\two$| -> x) + ... |$\cong$| |$\Sigma_i$| |$x^i$|
+\end{minted}
+
+The only exceptions I know of is $(x \to 0) \to 0$ and similar constructions.
+\end{frame}
+
+\begin{frame}[fragile]
+Take a closer look at:
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+[x] |$\cong$| (|$\zero$| -> x) + (|$\one$| -> x) + (|$\two$| -> x) + ... |$\cong$| |$\Sigma_i$| |$x^i$|
+\end{minted}
+What does this remind you of?
+\end{frame}
+
+\begin{frame}[fragile]
+Consider some function $f$ that has the same signature as $map$ on lists:
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a b. (a -> b) -> [a] -> [b]
+    -- Yoneda with f x = [a] -> [x]
+    |$\cong$| |$\forall$| a. [a] -> [a]
+    -- using the container formula
+    |$\cong$| |$\forall$| a. (|$\Sigma_i$| |$a^i$|) -> [a]
+    |$\cong$| |$\Pi_i$| [i]
+    -- expressing it using dependent types and renaming i to n
+    |$\cong$| (n : Nat) -> [Fin n]
+\end{minted}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{minted}[escapeinside=||,mathescape]{haskell}
+|$\forall$| a b. (a -> b) -> [a] -> [b]
+    |$\cong$| (n : Nat) -> [Fin n]
+\end{minted}
+\end{frame}
+
 
 \frame
 {

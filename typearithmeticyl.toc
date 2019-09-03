@@ -2,25 +2,25 @@
 \beamer@sectionintoc {2}{Introduction}{3}{0}{1}
 \beamer@subsectionintoc {2}{1}{Who am I?}{4}{0}{1}
 \beamer@subsectionintoc {2}{2}{Why are we here?}{8}{0}{1}
-\beamer@subsectionintoc {2}{3}{What and How?}{12}{0}{1}
-\beamer@sectionintoc {3}{Some Type Arithmetic}{17}{0}{2}
-\beamer@subsectionintoc {3}{1}{Ground Rules}{19}{0}{2}
-\beamer@subsectionintoc {3}{2}{Addition}{25}{0}{2}
-\beamer@subsectionintoc {3}{3}{Multiplication}{32}{0}{2}
-\beamer@subsectionintoc {3}{4}{Exponentiation}{34}{0}{2}
-\beamer@subsectionintoc {3}{5}{$\top $ and $\bot $}{38}{0}{2}
-\beamer@subsectionintoc {3}{6}{A correspondence Pt. 1}{39}{0}{2}
-\beamer@sectionintoc {4}{The Leibniz Perspective}{44}{0}{3}
-\beamer@subsectionintoc {4}{1}{When are things equal?}{45}{0}{3}
-\beamer@subsectionintoc {4}{2}{Isomorphisms}{49}{0}{3}
-\beamer@subsectionintoc {4}{3}{Identity of Indiscernibles}{53}{0}{3}
-\beamer@subsectionintoc {4}{4}{Putting it to work}{55}{0}{3}
-\beamer@subsectionintoc {4}{5}{The million dollar question}{60}{0}{3}
-\beamer@sectionintoc {5}{Some Category Theory}{64}{0}{4}
-\beamer@subsectionintoc {5}{1}{The Basics}{65}{0}{4}
-\beamer@subsectionintoc {5}{2}{Initial and Terminal Objects}{90}{0}{4}
-\beamer@subsectionintoc {5}{3}{Products and Coproducts}{95}{0}{4}
-\beamer@subsectionintoc {5}{4}{Universal Properties}{102}{0}{4}
-\beamer@sectionintoc {6}{The Yoneda Perspective}{113}{0}{5}
+\beamer@subsectionintoc {2}{3}{What and How?}{11}{0}{1}
+\beamer@sectionintoc {3}{Some Type Arithmetic}{16}{0}{2}
+\beamer@subsectionintoc {3}{1}{Ground Rules}{17}{0}{2}
+\beamer@subsectionintoc {3}{2}{Addition}{23}{0}{2}
+\beamer@subsectionintoc {3}{3}{Multiplication}{30}{0}{2}
+\beamer@subsectionintoc {3}{4}{Exponentiation}{32}{0}{2}
+\beamer@subsectionintoc {3}{5}{$\top $ and $\bot $}{36}{0}{2}
+\beamer@subsectionintoc {3}{6}{A correspondence Pt. 1}{37}{0}{2}
+\beamer@sectionintoc {4}{The Leibniz Perspective}{42}{0}{3}
+\beamer@subsectionintoc {4}{1}{When are things equal?}{43}{0}{3}
+\beamer@subsectionintoc {4}{2}{Isomorphisms}{47}{0}{3}
+\beamer@subsectionintoc {4}{3}{Identity of Indiscernibles}{51}{0}{3}
+\beamer@subsectionintoc {4}{4}{Putting it to work}{53}{0}{3}
+\beamer@subsectionintoc {4}{5}{The million dollar question}{58}{0}{3}
+\beamer@sectionintoc {5}{Some Category Theory}{62}{0}{4}
+\beamer@subsectionintoc {5}{1}{The Basics}{63}{0}{4}
+\beamer@subsectionintoc {5}{2}{Initial and Terminal Objects}{91}{0}{4}
+\beamer@subsectionintoc {5}{3}{Products and Coproducts}{96}{0}{4}
+\beamer@subsectionintoc {5}{4}{Universal Properties}{103}{0}{4}
+\beamer@sectionintoc {6}{The Yoneda Perspective}{114}{0}{5}
 \beamer@subsectionintoc {6}{1}{Representable Functors}{126}{0}{5}
 \beamer@sectionintoc {7}{Bringing it all back home}{143}{0}{6}

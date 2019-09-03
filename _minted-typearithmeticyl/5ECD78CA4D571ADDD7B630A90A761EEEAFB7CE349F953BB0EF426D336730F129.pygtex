@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{p}{[}\PYG{n}{x}\PYG{p}{]} \PYG{esc}{$\cong$} \PYG{p}{(}\PYG{esc}{$\zero$} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{x}\PYG{p}{)} \PYG{o}{+} \PYG{p}{(}\PYG{esc}{$\one$} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{x}\PYG{p}{)} \PYG{o}{+} \PYG{p}{(}\PYG{esc}{$\two$} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{x}\PYG{p}{)} \PYG{o}{+} \PYG{o}{...} \PYG{esc}{$\cong$} \PYG{esc}{$\Sigma_i$} \PYG{esc}{$x^i$}
+\end{Verbatim}

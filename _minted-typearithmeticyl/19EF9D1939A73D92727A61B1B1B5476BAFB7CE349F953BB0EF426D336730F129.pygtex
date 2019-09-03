@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{esc}{$\forall$} \PYG{n}{a} \PYG{n}{b}\PYG{o}{.} \PYG{p}{(}\PYG{n}{a} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{b}\PYG{p}{)} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{p}{[}\PYG{n}{a}\PYG{p}{]} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{p}{[}\PYG{n}{b}\PYG{p}{]}
+    \PYG{c+c1}{\PYGZhy{}\PYGZhy{} Yoneda with f x = [a] \PYGZhy{}\PYGZgt{} [x]}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{a}\PYG{o}{.} \PYG{p}{[}\PYG{n}{a}\PYG{p}{]} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{p}{[}\PYG{n}{a}\PYG{p}{]}
+    \PYG{c+c1}{\PYGZhy{}\PYGZhy{} using the container formula}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\forall$} \PYG{n}{a}\PYG{o}{.} \PYG{p}{(}\PYG{esc}{$\Sigma_i$} \PYG{esc}{$a^i$}\PYG{p}{)} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{p}{[}\PYG{n}{a}\PYG{p}{]}
+    \PYG{esc}{$\cong$} \PYG{esc}{$\Pi_i$} \PYG{p}{[}\PYG{n}{i}\PYG{p}{]}
+    \PYG{c+c1}{\PYGZhy{}\PYGZhy{} expressing it using dependent types and renaming i to n}
+    \PYG{esc}{$\cong$} \PYG{p}{(}\PYG{n}{n} \PYG{k+kt}{:} \PYG{k+kt}{Nat}\PYG{p}{)} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{p}{[}\PYG{k+kt}{Fin} \PYG{n}{n}\PYG{p}{]}
+\end{Verbatim}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.23)  2 SEP 2019 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.23)  3 SEP 2019 09:34
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1525,28 +1525,23 @@ Package pdftex.def Info: kadena.png  used on input line 119.
 
 ] [16
 
-] [17
+]
+LaTeX Font Info:    Try loading font information for U+bbold on input line 182.
+
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/bbold/Ubbold.fd)
+[17
 
 ] [18
 
-]
-LaTeX Font Info:    Try loading font information for U+bbold on input line 192.
-
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/bbold/Ubbold.fd) [19
+] [19
 
 ] [20
 
-]
-[21
+] [21
 
 ] [22
 
 ] [23
-
-] [24
-
-] [25
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1561,13 +1556,13 @@ LaTeX Font Info:    Try loading font information for U+bbold on input line 192.
 26D336730F129.pygtex
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 5.
-)) [26
+)) [24
+
+] [25
+
+] [26
 
 ] [27
-
-] [28
-
-] [29
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1577,13 +1572,13 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 
 
 (./_minted-typearithmeticyl/62B8CDFB92D8B57760112938587F740CAFB7CE349F953BB0EF4
-26D336730F129.pygtex)) [30
+26D336730F129.pygtex)) [28
+
+] [29
+
+] [30
 
 ] [31
-
-] [32
-
-] [33
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1593,7 +1588,7 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 
 
 (./_minted-typearithmeticyl/28B65E6214C518C78BF171A225A692FB66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [34
+AB760003ADBC7.pygtex)) [32
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1603,42 +1598,42 @@ AB760003ADBC7.pygtex)) [34
 
 
 (./_minted-typearithmeticyl/73B3421DE487ECBF5935518E5C7CEBDF66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [35
+AB760003ADBC7.pygtex)) [33
 
-] [36
+] [34
 
-] [37
+] [35
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 345.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\top' on input line 345.
+(hyperref)                removing `\top' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 345.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 345.
+(hyperref)                removing `math shift' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\bot' on input line 345.
+(hyperref)                removing `\bot' on input line 335.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 345.
+(hyperref)                removing `math shift' on input line 335.
 
-[38
+[36
 
-] [39
+] [37
 
-] [40
+] [38
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1648,7 +1643,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 (./_minted-typearithmeticyl/39A8A49A5E1B5A19DA340BC195F39B8CAFB7CE349F953BB0EF4
-26D336730F129.pygtex)) [41
+26D336730F129.pygtex)) [39
+
+] [40
+
+] [41
 
 ] [42
 
@@ -1662,10 +1661,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ] [47
 
-] [48
-
-] [49
-
 ]
 \openout4 = `typearithmeticyl.vrb'.
 
@@ -1675,15 +1670,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 (./_minted-typearithmeticyl/CFD87166E5C05ECC21FFAFB6B8813A8266CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [50
+AB760003ADBC7.pygtex)) [48
+
+] [49
+
+] [50
 
 ] [51
 
 ] [52
-
-] [53
-
-] [54
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1693,7 +1688,7 @@ AB760003ADBC7.pygtex)) [50
 
 
 (./_minted-typearithmeticyl/8B032F85BCEBD1680193D49604E068DE66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [55
+AB760003ADBC7.pygtex)) [53
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1703,7 +1698,7 @@ AB760003ADBC7.pygtex)) [55
 
 
 (./_minted-typearithmeticyl/9D3B323907031E53777E24C9A7DDBD9666CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [56
+AB760003ADBC7.pygtex)) [54
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1713,9 +1708,9 @@ AB760003ADBC7.pygtex)) [56
 
 
 (./_minted-typearithmeticyl/D26A6C437AC547E38EF121EFA300A67166CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [57
+AB760003ADBC7.pygtex)) [55
 
-] [58
+] [56
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1725,7 +1720,11 @@ AB760003ADBC7.pygtex)) [57
 
 
 (./_minted-typearithmeticyl/17BE5D5902F20352C4C6FCAF7F81F976AFB7CE349F953BB0EF4
-26D336730F129.pygtex)) [59
+26D336730F129.pygtex)) [57
+
+] [58
+
+] [59
 
 ] [60
 
@@ -1741,18 +1740,20 @@ AB760003ADBC7.pygtex)) [57
 
 ] [66
 
-] [67
+]
+[67
 
 ] [68
 
-]
-[69
+] [69
 
 ] [70
 
 ] [71
 
 ] [72
+
+] [73
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1762,9 +1763,7 @@ AB760003ADBC7.pygtex)) [57
 
 
 (./_minted-typearithmeticyl/CFC73DC7D5DC807639DCA1D705A80BCB66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [73
-
-] [74
+AB760003ADBC7.pygtex)) [74
 
 ] [75
 
@@ -1780,6 +1779,8 @@ AB760003ADBC7.pygtex)) [73
 
 ] [81
 
+] [82
+
 ]
 \openout4 = `typearithmeticyl.vrb'.
 
@@ -1789,18 +1790,18 @@ AB760003ADBC7.pygtex)) [73
 
 
 (./_minted-typearithmeticyl/74454F5AB55A9F28E5E80679214E6DF266CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [82
-
-] [83
+AB760003ADBC7.pygtex)) [83
 
 ] [84
+
+] [85
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
 
- (./typearithmeticyl.vrb) [85
+ (./typearithmeticyl.vrb) [86
 
-] [86
+] [87
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1811,9 +1812,7 @@ AB760003ADBC7.pygtex)) [82
 
 
 (./_minted-typearithmeticyl/389F66D4C0946E049B4210851C27100966CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [87
-
-] [88
+AB760003ADBC7.pygtex)) [88
 
 ] [89
 
@@ -1825,6 +1824,8 @@ AB760003ADBC7.pygtex)) [87
 
 ] [93
 
+] [94
+
 ]
 \openout4 = `typearithmeticyl.vrb'.
 
@@ -1834,16 +1835,16 @@ AB760003ADBC7.pygtex)) [87
 
 
 (./_minted-typearithmeticyl/1EADEA96EB2ECE4B24F88F8B9529B7A5AFB7CE349F953BB0EF4
-26D336730F129.pygtex)) [94
-
-] [95
+26D336730F129.pygtex)) [95
 
 ] [96
+
+] [97
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
 
- (./typearithmeticyl.vrb) [97
+ (./typearithmeticyl.vrb) [98
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1854,14 +1855,14 @@ AB760003ADBC7.pygtex)) [87
 
 
 (./_minted-typearithmeticyl/862B33B450093D6B9EB3DD77282FFC2966CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [98
+AB760003ADBC7.pygtex)) [99
 
-] [99
+] [100
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
 
- (./typearithmeticyl.vrb) [100
+ (./typearithmeticyl.vrb) [101
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1872,9 +1873,7 @@ AB760003ADBC7.pygtex)) [98
 
 
 (./_minted-typearithmeticyl/8952231CA4B5C2F2EFF7B7E81724BCC666CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [101
-
-] [102
+AB760003ADBC7.pygtex)) [102
 
 ] [103
 
@@ -1883,6 +1882,8 @@ AB760003ADBC7.pygtex)) [101
 ] [105
 
 ] [106
+
+] [107
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1893,13 +1894,13 @@ AB760003ADBC7.pygtex)) [101
 
 
 (./_minted-typearithmeticyl/5D56DD07FF3BCF83E619E5524CCC5DBD66CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [107
-
-] [108
+AB760003ADBC7.pygtex)) [108
 
 ] [109
 
 ] [110
+
+] [111
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1909,9 +1910,7 @@ AB760003ADBC7.pygtex)) [107
 
 
 (./_minted-typearithmeticyl/06CDC9D5F607B4E8F5B760F61F4B4E5966CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [111
-
-] [112
+AB760003ADBC7.pygtex)) [112
 
 ] [113
 
@@ -1927,10 +1926,10 @@ AB760003ADBC7.pygtex)) [111
 
 ] [119
 
-]
-[120
+] [120
 
-] [121
+]
+[121
 
 ]
 \openout4 = `typearithmeticyl.vrb'.
@@ -1963,17 +1962,17 @@ AB760003ADBC7.pygtex)) [111
 ] [131
 
 ]
-[132
-
-]
 \openout4 = `typearithmeticyl.vrb'.
 
- (./typearithmeticyl.vrb
+
+(./typearithmeticyl.vrb
 \openout5 = `typearithmeticyl.pyg'.
 
 
 (./_minted-typearithmeticyl/211C4928D341F9B04FF839E171A1DB6166CBEE8E56BD4C6D0EC
-AB760003ADBC7.pygtex)) [133
+AB760003ADBC7.pygtex)) [132
+
+] [133
 
 ] [134
 
@@ -2057,7 +2056,7 @@ AB760003ADBC7.pygtex)) [140
 \openout5 = `typearithmeticyl.pyg'.
 
 
-(./_minted-typearithmeticyl/99903A606B2DE705A0D3060760636E99AFB7CE349F953BB0EF4
+(./_minted-typearithmeticyl/7A9787A47051E151BD29BA9ED5E54359AFB7CE349F953BB0EF4
 26D336730F129.pygtex)) [147
 
 ]
@@ -2116,7 +2115,47 @@ AB760003ADBC7.pygtex)) [140
 
 ] [155
 
-] [156
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/095686ECF224C1F6953B20843B9C6D64AFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [156
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/5ECD78CA4D571ADDD7B630A90A761EEEAFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [157
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/19EF9D1939A73D92727A61B1B1B5476BAFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [158
+
+]
+\openout4 = `typearithmeticyl.vrb'.
+
+ (./typearithmeticyl.vrb
+\openout5 = `typearithmeticyl.pyg'.
+
+
+(./_minted-typearithmeticyl/1E68DED0A5D6D2A2CCDD62D671338F8FAFB7CE349F953BB0EF4
+26D336730F129.pygtex)) [159
+
+] [160
 
 ]
 \tf@nav=\write8
@@ -2128,22 +2167,25 @@ AB760003ADBC7.pygtex)) [140
 \tf@snm=\write10
 \openout10 = `typearithmeticyl.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1416.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1416.
+runsystem(rm _minted-typearithmeticyl/0777530A5EF597514228ED5B849D49E766CBEE8E5
+6BD4C6D0ECAB760003ADBC7.pygtex)...executed.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1480.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1480.
  (./typearithmeticyl.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1416.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1416.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1480.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1480.
 
 Package rerunfilecheck Info: File `typearithmeticyl.out' has not changed.
-(rerunfilecheck)             Checksum: 9764D7354647AF7180EACD08502D1B9F;1662.
+(rerunfilecheck)             Checksum: 7B8F66FFDEB11D32A9C30EE46B7EE5D5;1662.
 runsystem(rm typearithmeticyl.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 36213 strings out of 492609
- 732115 string characters out of 6129048
- 829408 words of memory out of 5000000
- 39014 multiletter control sequences out of 15000+600000
+ 36256 strings out of 492609
+ 733893 string characters out of 6129048
+ 829989 words of memory out of 5000000
+ 39028 multiletter control sequences out of 15000+600000
  549937 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,28n,84p,783b,1436s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2163,10 +2205,10 @@ local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loca
 l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on typearithmeticyl.pdf (156 pages, 261711 bytes).
+Output written on typearithmeticyl.pdf (160 pages, 266691 bytes).
 PDF statistics:
- 1095 PDF objects out of 1200 (max. 8388607)
- 904 compressed objects within 10 object streams
- 339 named destinations out of 1000 (max. 500000)
+ 1117 PDF objects out of 1200 (max. 8388607)
+ 922 compressed objects within 10 object streams
+ 347 named destinations out of 1000 (max. 500000)
  256 words of extra memory for PDF output out of 10000 (max. 10000000)
 
