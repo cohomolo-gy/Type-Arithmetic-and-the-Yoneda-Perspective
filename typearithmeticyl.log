@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.23)  3 SEP 2019 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.23)  4 SEP 2019 08:30
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -2190,7 +2190,7 @@ runsystem(rm typearithmeticyl.pyg)...executed.
 Here is how much of TeX's memory you used:
  36262 strings out of 492609
  733919 string characters out of 6129048
- 829990 words of memory out of 5000000
+ 830014 words of memory out of 5000000
  39032 multiletter control sequences out of 15000+600000
  549937 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2211,7 +2211,7 @@ local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
 al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loca
 l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on typearithmeticyl.pdf (161 pages, 288996 bytes).
+Output written on typearithmeticyl.pdf (161 pages, 288861 bytes).
 PDF statistics:
  1126 PDF objects out of 1200 (max. 8388607)
  928 compressed objects within 10 object streams
